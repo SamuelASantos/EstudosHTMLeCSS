@@ -3,3 +3,6 @@
 
 ## Semana 0
 [Início](semana0.md)
+
+## Semana 1
+[Fundamentos](semana1.md)

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Santos">
+    <meta name="keywords" content="FlexBox, text-align, font-family">
+    <meta name="description" content="Site educativo referente ao FlexBox">
+    <style>
+        .divpai,
+        .divpai2 {
+            background-color: gray;
+            display: flex;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .divfilha {
+            height: 100px;
+            flex: 1;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
+        .direita {
+            text-align: right;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        .rosa {
+            background-color: pink;
+        }
+
+        .area1 {
+            background-color: rgba(128, 128, 128, 0.541);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .area2 {
+            background-color: rgba(128, 128, 128, 0.541);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .area3 {
+            background-color: rgba(128, 128, 128, 0.541);
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .area4 {
+            background-color: rgba(128, 128, 128, 0.541);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .square {
+            background-color: brown;
+            padding: 10px;
+        }
+
+        .area-p3 {
+            background-color: rgba(255, 0, 0, 0.26);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .area-p4 {
+            background-color: rgba(255, 0, 0, 0.26);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .area-p5 {
+            background-color: rgba(255, 0, 0, 0.26);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .quad1 {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        .quad2 {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .quad3 {
+            width: 70px;
+            height: 70px;
+            background-color: red;
+        }
+    </style>
+    <title>FlexBox</title>
+</head>
+
+<body>
+    <header>
+        <h1>Flex Box (Caixas Flexíveis)</h1>
+    </header>
+    <h2>Flex</h2>
+    <main>
+        <div class="divpai">
+            <section class="divfilha azul">
+                Conteúdo 1
+            </section>
+            <section class="divfilha vermelho">
+                Conteúdo 2
+            </section>
+        </div>
+        <hr>
+        <h2>Text Align</h2>
+        <div class="divpai2">
+            <section class="divfilha esquerda">
+                Conteúdo alinhado na esquerda
+            </section>
+            <section class="divfilha verde centro">
+                Conteúdo alinhado no meio
+            </section>
+            <section class="divfilha rosa direita">
+                Conteúdo alinhado nna direita
+            </section>
+        </div>
+        <hr>
+        <h2>FlexBox (Parte 2)</h2>
+        <h3>Space-between</h3>
+        <div class="area1">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+        </div>
+        <h3>Space-around</h3>
+        <div class="area2">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+        </div>
+        <h3>Space-evenly</h3>
+        <div class="area3">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+        </div>
+        <h3>Gap</h3>
+        <div class="area4">
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+        </div>
+        <hr>
+        <h2>Flexbox (Parte 3)</h2>
+        <h3>align-items - flex-end</h3>
+        <div class="area-p3">
+            <div class="quad1"></div>
+            <div class="quad2"></div>
+            <div class="quad3"></div>
+        </div>
+        <h3>align-items - center</h3>
+        <div class="area-p4">
+            <div class="quad1"></div>
+            <div class="quad2"></div>
+            <div class="quad3"></div>
+        </div>
+        <h3>align-items - flex-start</h3>
+        <div class="area-p5">
+            <div class="quad1"></div>
+            <div class="quad2"></div>
+            <div class="quad3"></div>
+        </div>
+        <hr>
+    </main>
+</body>
+
+</html>

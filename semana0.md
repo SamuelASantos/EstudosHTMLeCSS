@@ -29,6 +29,6 @@
     - index.html é o primeiro arquivo a ser lido pelo navegador
 - "Olá mundo"
 
-[Projeto](index0.html)
+[Projeto](semana0/index0.html)
 
 [Voltar](README.md)

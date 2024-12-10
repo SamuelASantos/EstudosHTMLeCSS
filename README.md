@@ -6,3 +6,6 @@
 
 ## Semana 1
 [Fundamentos](semana1.md)
+
+## Semana 2
+[Aprofundamento](semana2.md)

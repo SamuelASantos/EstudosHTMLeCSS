@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin: auto;
+        }
+
+        .rotate {
+            transform: rotate(20deg);
+        }
+
+        .skew {
+            transform: skew(20deg, 20deg);
+        }
+
+        .scale:hover {
+            transform: scale(2);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transform</h1>
+    <h2>Quadrado normal</h2>
+    <div class="square"></div>
+    <h2>Rotate</h2>
+    <div class="square rotate"></div>
+    <h2>Skew</h2>
+    <div class="square skew"></div>
+    <h2>Scale</h2>
+    <div class="square scale"></div>
+</body>
+
+</html>

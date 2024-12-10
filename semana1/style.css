@@ -1,0 +1,75 @@
+.laranja {
+    color: orange;
+}
+
+p {
+    color: pink;
+}
+
+.azul {
+    color: blue;
+}
+
+#roxo {
+    color: purple;
+}
+
+p.vermelho {
+    color: red;
+}
+
+h3,
+h4 {
+    color: brown;
+}
+
+section h4 {
+    color: chocolate;
+}
+
+.color {
+    color: blue;
+}
+
+.backgroundcolor {
+    color: white;
+    background-color: blue;
+}
+
+.width {
+    color: white;
+    background-color: blue;
+    width: 200px;
+}
+
+.height {
+    color: white;
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+}
+
+.fontsize {
+    font-size: 50px;
+}
+
+.border {
+    border: 4px solid red;
+}
+
+.boxmodel {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.conteudonone {
+    display: none;
+}
+
+.conteudoblock {
+    display: block;
+}

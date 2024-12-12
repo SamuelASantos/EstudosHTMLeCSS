@@ -93,11 +93,36 @@
 [Tag audio na prática](semana3/audio.html)
 
 ### Combinators
+- Existem 4 tipos de seletores
+    - Ancestral (A B) - Seleciona todos os elementos B que estão dentro do elemento A, independente de quantos níveis abaixo dele
+        - Exemplo de uso:
+            - div p {color:blue;} - Todo \<p> que estiver dentro da \<div> será azul
+    - Filho direto (A > B) - Seleciona apenas os elementos B que são filhos diretos de A
+        - Exemplo de uso:
+            - div > p {color:blue;} - Apenas os \<p> que são filhos imediatos de \<div> fica azul.
+    - Próximo irmão (A + B) - Seleciona o elemento B que está imediatamente depois de A, no mesmo nível
+        - Exemplo de uso:
+            - h1 + p {font-size:20px} - Apenas o \<p> que vem logo após o \<h1> será afetado
+    - Irmãos gerais (A ~ B) - Seleciona todos os elementos B que estão no mesmo nível de A e aparecem depois dele.
+        - Exemplo de uso:
+            - h1 ~ p {color:green} - Todos os \<p> que aparecem depois de um \<h1>, no mesmo nível, ficam verdes
 
+[Combinators na prática](semana3/combinators.html)
 
 ### Quebra de texto
+- Técnicas de quebra de textos para proteção do layout
+    - word-wrap:break-word; - Quebra palavras grandes que estão apssando da área delimitada
+    - word-break:break-all; - Quebra todos as palavras fazendo um texto justificado
+    - word-break:keep-all; - Configuração padrão em que mantém as palavras normalmente
+    - Outra forma de lidar com textos é usar 3 propriedades em conjunto:
+        - overflow:hidden; - O texto que passar é escondido (ocultado)
+        - white-space:nowrap; - O texto ficará todo em uma única linha
+        - text-overflow:ellipses; - Insere 3 pontos quando não tiver mais espaço
 
+[Quebra de texto na prática](semana3/quebra-texto.html)
 
 ### Introdução a bibliotecas CSS
-
-
+- Bibliotecas CSS que facilitam a estilização
+    - Tailwind
+    - Bootstrap
+    - Foundation

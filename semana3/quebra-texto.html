@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra de texto</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+        .area {
+            width: 250px;
+            border: 1px solid #ccc;
+        }
+
+        .word-break-break {
+            word-break: break-all;
+        }
+
+        .word-break-keep {
+            word-break: keep-all;
+        }
+
+        .overflow {
+            overflow: hidden;
+        }
+
+        .white-space {
+            white-space: nowrap;
+        }
+
+        .text-overflow {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quebra de textos</h1>
+    <hr>
+    <p>Texto quebrando o layout</p>
+    <div class="area">
+        <p>Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+
+    <p>[word-break:break-all] Quebra de texto em todas as palavras</p>
+    <div class="area">
+        <p class="word-break-break">Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam
+            reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+
+    <p>[word-break:keep-all] Quebra de texto em todas as palavras (Padrão)</p>
+    <div class="area">
+        <p class="word-break-keep">Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam
+            reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+
+    <p>[overflow:hidden] Texto que ultrapassa o limite é escondido</p>
+    <div class="area">
+        <p class="overflow">Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam
+            reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+
+    <p>[white-space:nowrap] Texto fica todo em uma única linha</p>
+    <div class="area">
+        <p class="white-space">Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam
+            reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+
+    <p>[text-overflow:ellipses + overflow:hidden + white-space:nowrap] Texto que não cabe no espaço é reduzido em
+        reticências</p>
+    <div class="area">
+        <p class="text-overflow">Lorem ipsum dolorsitametconsecteturdipisicingelitariatur dolor totam quis quibusdam
+            reprehenderit
+            veniam
+            rerum nostrum dolorum temporibus quia consequuntur illum sequi in velit, doloribus distinctio accusamus
+            explicabo nemo!</p>
+    </div>
+</body>
+
+</html>

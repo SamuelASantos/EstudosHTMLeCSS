@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+        .ancestral p {
+            color: red;
+        }
+
+        .filho-direto>p {
+            color: blue;
+        }
+
+        .proximo-irmao+p {
+            color: green;
+        }
+
+        .irmaos-gerais~p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Combinatores</h1>
+    <h2>Ancestral (A B)</h2>
+    <div class="ancestral">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores placeat molestiae sapiente
+            inventore tempora debitis, sequi voluptates earum accusantium, voluptatum temporibus minima. Et veniam quas
+            provident placeat tempore adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus iusto nostrum ad ullam id vero
+            tempora aspernatur dolorum eveniet earum architecto, possimus sint sapiente, eligendi nemo ducimus pariatur
+            natus!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas iusto ipsa praesentium iste
+                nesciunt, est commodi consectetur a velit magni at exercitationem aspernatur, molestias reprehenderit
+                voluptatem autem ipsam illum.</p>
+        </section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum necessitatibus optio quia. Et
+            laudantium perferendis doloribus. Enim et, voluptatibus mollitia atque eum, fuga necessitatibus, sunt porro
+            iste assumenda vitae!</p>
+    </div>
+
+    <h2>Filho direto (A > B)</h2>
+    <div class="filho-direto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores placeat molestiae sapiente
+            inventore tempora debitis, sequi voluptates earum accusantium, voluptatum temporibus minima. Et veniam quas
+            provident placeat tempore adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus iusto nostrum ad ullam id vero
+            tempora aspernatur dolorum eveniet earum architecto, possimus sint sapiente, eligendi nemo ducimus pariatur
+            natus!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas iusto ipsa praesentium iste
+                nesciunt, est commodi consectetur a velit magni at exercitationem aspernatur, molestias reprehenderit
+                voluptatem autem ipsam illum.</p>
+        </section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum necessitatibus optio quia. Et
+            laudantium perferendis doloribus. Enim et, voluptatibus mollitia atque eum, fuga necessitatibus, sunt porro
+            iste assumenda vitae!</p>
+    </div>
+
+    <h2>Próximo irmão (A + B)</h2>
+    <div class="proximo-irmao">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores placeat molestiae sapiente
+            inventore tempora debitis, sequi voluptates earum accusantium, voluptatum temporibus minima. Et veniam quas
+            provident placeat tempore adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus iusto nostrum ad ullam id vero
+            tempora aspernatur dolorum eveniet earum architecto, possimus sint sapiente, eligendi nemo ducimus pariatur
+            natus!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas iusto ipsa praesentium iste
+                nesciunt, est commodi consectetur a velit magni at exercitationem aspernatur, molestias reprehenderit
+                voluptatem autem ipsam illum.</p>
+        </section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum necessitatibus optio quia. Et
+            laudantium perferendis doloribus. Enim et, voluptatibus mollitia atque eum, fuga necessitatibus, sunt porro
+            iste assumenda vitae!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad temporibus, iusto rem, excepturi unde tempore
+        obcaecati repellendus odio ipsum est placeat provident nostrum qui. Et ullam quisquam possimus blanditiis eum.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquid corrupti, laboriosam ea quidem
+        repellendus, quae, consequatur culpa eos modi cumque. Tempore veritatis quibusdam consectetur, nihil aliquid
+        corrupti necessitatibus nisi!</p>
+
+    <h2>Irmãos gerais (A ~ B)</h2>
+    <div class="irmaos-gerais">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maiores placeat molestiae sapiente
+            inventore tempora debitis, sequi voluptates earum accusantium, voluptatum temporibus minima. Et veniam quas
+            provident placeat tempore adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusamus iusto nostrum ad ullam id vero
+            tempora aspernatur dolorum eveniet earum architecto, possimus sint sapiente, eligendi nemo ducimus pariatur
+            natus!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptas iusto ipsa praesentium iste
+                nesciunt, est commodi consectetur a velit magni at exercitationem aspernatur, molestias reprehenderit
+                voluptatem autem ipsam illum.</p>
+        </section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat earum necessitatibus optio quia. Et
+            laudantium perferendis doloribus. Enim et, voluptatibus mollitia atque eum, fuga necessitatibus, sunt porro
+            iste assumenda vitae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquid corrupti, laboriosam ea quidem
+            repellendus, quae, consequatur culpa eos modi cumque. Tempore veritatis quibusdam consectetur, nihil aliquid
+            corrupti necessitatibus nisi!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquid corrupti, laboriosam ea quidem
+        repellendus, quae, consequatur culpa eos modi cumque. Tempore veritatis quibusdam consectetur, nihil aliquid
+        corrupti necessitatibus nisi!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aliquid corrupti, laboriosam ea quidem
+        repellendus, quae, consequatur culpa eos modi cumque. Tempore veritatis quibusdam consectetur, nihil aliquid
+        corrupti necessitatibus nisi!</p>
+</body>
+
+</html>

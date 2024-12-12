@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Avançado</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-areas:
+                'cabecalho  cabecalho   cabecalho   cabecalho'
+                'menu       principal   principal   direita'
+                'rodape     rodape      rodape      rodape'
+            ;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header,
+        nav,
+        .main,
+        aside,
+        footer {
+            padding: 20px;
+        }
+
+        header {
+            grid-area: cabecalho;
+            background-color: aqua;
+        }
+
+        nav {
+            grid-area: menu;
+            background-color: red;
+        }
+
+        .main {
+            grid-area: principal;
+            background-color: blue;
+        }
+
+        aside {
+            grid-area: direita;
+            background-color: orange;
+        }
+
+        footer {
+            grid-area: rodape;
+            background-color: pink;
+        }
+
+        @media (width < 700px) {
+            main {
+                grid-template-areas:
+                    'cabecalho'
+                    'principal'
+                    'direita'
+                    'rodape'
+                ;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>Cabeçalho</header>
+        <nav>Menu</nav>
+        <section class="main">Seção principal</section>
+        <aside>Conteúdo direito</aside>
+        <footer>Rodapé</footer>
+    </main>
+</body>
+
+</html>

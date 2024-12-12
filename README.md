@@ -9,3 +9,6 @@
 
 ## Semana 2
 [Aprofundamento](semana2.md)
+
+## Semana 3
+[HTML e CSS Avançado](semana3.md)

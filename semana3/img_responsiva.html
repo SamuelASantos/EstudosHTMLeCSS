@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+        /* img {
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Imagens responsivas</h1>
+    <picture>
+        <source media="(min-width: 900px)" srcset="/assets/images/pc400x400.png">
+        <source media="(min-width: 600px)" srcset="/assets/images/pc200x200.png">
+        <img src="/assets/images/pc100x100.png" alt="Imagem responsiva">
+    </picture>
+
+</body>
+
+</html>

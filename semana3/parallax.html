@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Parallax</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+        .main-parallax,
+        .secondary-parallax {
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+        }
+
+        .main-parallax {
+            height: 100vh;
+        }
+
+        .secondary-parallax {
+            height: 400px;
+        }
+
+        .one {
+            background-image: url(assets/images/parallax1.jpg);
+        }
+
+        .two {
+            background-image: url(assets/images/parallax2.jpg);
+        }
+
+        .three {
+            background-image: url(assets/images/parallax3.jpg);
+        }
+
+        .four {
+            background-image: url(assets/images/parallax4.jpg);
+        }
+
+        .main-parallax p,
+        .secondary-parallax p {
+            background-color: #ccc;
+            padding: 30px;
+        }
+
+        .phrases {
+            font-size: 2rem;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-parallax one">
+        <p>Oi, tudo bem?</p>
+    </div>
+    <div class="phrases">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+    </div>
+
+    <div class="secondary-parallax two">
+        <p>Olá</p>
+    </div>
+
+    <div class="phrases">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+    </div>
+
+    <div class="secondary-parallax three">
+        <p>Olá</p>
+    </div>
+
+    <div class="phrases">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam fugit, pariatur, exercitationem voluptatibus,
+            voluptatem eos sequi assumenda non explicabo reiciendis earum nam voluptatum. Error quasi vitae natus iusto
+            tempore rem!</p>
+    </div>
+
+    <div class="main-parallax four">
+        <p>FIM</p>
+    </div>
+</body>
+
+</html>

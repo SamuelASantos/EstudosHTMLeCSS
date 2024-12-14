@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Layout de paginação simples usando HTML e CSS">
+    <title>Layout de paginação simples usando HTML e CSS</title>
+    <style>
+        :root {
+            --primary-color: #ccc;
+            --secondary-color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        .area-pagination {
+            display: flex;
+            margin: 10px;
+            border-radius: 10px;
+            height: 600px;
+            border: 1px solid var(--primary-color);
+            align-items: end;
+            justify-content: center;
+        }
+
+        .pagination {
+            padding: 20px;
+            display: flex;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 400px;
+        }
+
+        .pagination a {
+            flex: 1;
+            text-align: center;
+            border: 1px solid var(--primary-color);
+            padding: 20px;
+            text-decoration: none;
+            color: var(--secondary-color);
+        }
+
+        .pagination a:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .pagination a:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .pagination a:hover {
+            background-color: var(--primary-color);
+        }
+
+        .pagination a.activate {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Paginação</h1>
+    <hr>
+    <div class="area-pagination">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#" class="activate">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+</body>
+
+</html>

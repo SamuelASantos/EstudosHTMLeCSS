@@ -1,14 +1,14 @@
-### Bem vindo a semana 3
+### 📚 Bem vindo a semana 3
 - Conceitos avançados de HTML e CSS com o foco em vídeo, áudio e projetos práticos
 
-### Regra do 100 para 1
+### 🎯 Regra do 100 para 1
 - Persistência e proporção
     - Para cada 100 tentativas de um contato, 1 irá dar atenção
 
 ### As aparentes aletoriedade da vida
 - Importância de network genuíno para oportunidades na área de programação
 
-### Layout com GRID avançado
+### 🎨 Layout com GRID avançado
 - Criação de layouts responsivos e visuais utilizando grid e grid-template-areas
     - grid-area - Dá nome ao elemento
     - grid-template-areas - No elemento pai, organiza os elementos por nome
@@ -21,13 +21,13 @@
 
 [Grid avançado na prática](semana3/grid-avancado.html)
 
-### Layout com FLEXBOX avançado
+### 🧩 Layout com FLEXBOX avançado
 - Introdução ao flexbox avançado e uso do flex wrap e order
     - flex-wrap - Permite a quebra do elemento para área abaixo para se comportar no espaço
     - flex-wrap-reverse - Permite a quebra do elemento para área acima para se comportar no espaço
     - order - Modifica a ordem dos elementos. Todos os elementos sem order serão 0 depois os que estão na ordem 1 e assim sucessivamente
 
-### Position sticky
+### 📌 Position sticky
 - Exemplos práticos e diferenças para position fixed
     - position: stick; - O elemento se torna fixo quando rola o scroll da página
     - top - Valor no topo que quando tocar o stick será ativado e o elemento ficará preso (o mesmo se dá com os valores de bot, right e left)
@@ -35,7 +35,7 @@
 
 [Position stick na prática](semana3/sticky.html)
 
-### Efeito parallax
+### 🌌 Efeito parallax
 - Demonstração do efeito parallax incluindo configurações de background e alinhamento de conteúdo
     - background-size: cover; - Ajusta o tamanhodo background para cobrir todo o elemento independente do tamanho da tela
     - height: 100vh; - A altura será 100% da altura da viewport (janela do navegador)
@@ -43,7 +43,7 @@
 
 [Efeito parallax na prática](semana3/parallax.html)
 
-### Imagens responsivas (picture e srcset)
+### 🖼️ Imagens responsivas (picture e srcset)
 - Criação de imagens responsivas utilizando a tag \<picture> para diferentes dispositivos
     - \<picture>
         - \<source media="(width > 900px)" srcset="DESTINO" />
@@ -53,7 +53,7 @@
 
 [Imagens responsivas na prática](semana3/img_responsiva.html)
 
-### Formulários avançados HTML5
+### 📝 Formulários avançados HTML5
 - Inputs no HTML: Validação, obrigatoriedade, tipos diversos (text, password, email, color, date, time, radio, checkbox, etc)
     - \<input name="EXEMPLO" required> - required = Obriga o usuário preencher o campo
     - \<input name="EXEMPLO" pattern="[A-Za-z]{3}"> - pattern = Obriga o usuário a seguir um padrão (REGEX). No exemplo, o usuário só poderá digitar um total de 3 letras sendo elas as letras alfabética de A a Z maiúsculas e minúsculas
@@ -73,7 +73,7 @@
 
 [Formulários avançados HTML5 na prática](semana3/formulario-avancado.html)
 
-### Tag video
+### 🎥 Tag video
 - Inserção de vídeo HTML, manipulação de atributos
     - \<video src="CAMINHO" autoplay muted controls loop >
         - autoplay - Inicia o vídeo quando a página é carregada
@@ -83,7 +83,7 @@
 
 [Tag video na prática](semana3/video.html)
 
-### Tag audio
+### 🎶 Tag audio
 - Atributos, uso e integração com JS
     - \<audio src="CAMINHO" controls muted loop></audio>
         - controls - Aparece os controles (play, pause, barra de progresso, volume)
@@ -92,7 +92,7 @@
 
 [Tag audio na prática](semana3/audio.html)
 
-### Combinators
+### 🔄 Combinators
 - Existem 4 tipos de seletores
     - Ancestral (A B) - Seleciona todos os elementos B que estão dentro do elemento A, independente de quantos níveis abaixo dele
         - Exemplo de uso:
@@ -109,7 +109,7 @@
 
 [Combinators na prática](semana3/combinators.html)
 
-### Quebra de texto
+### 🖋️ Quebra de texto
 - Técnicas de quebra de textos para proteção do layout
     - word-wrap:break-word; - Quebra palavras grandes que estão apssando da área delimitada
     - word-break:break-all; - Quebra todos as palavras fazendo um texto justificado
@@ -121,8 +121,30 @@
 
 [Quebra de texto na prática](semana3/quebra-texto.html)
 
-### Introdução a bibliotecas CSS
+### 📚 Introdução a bibliotecas CSS
 - Bibliotecas CSS que facilitam a estilização
     - Tailwind
     - Bootstrap
     - Foundation
+
+## 💡 Resumo dos aprendizados
+
+- **Layouts Avançados**: Aprendi a usar `grid-template-areas` para criar layouts complexos e responsivos, facilitando a organização dos elementos em um grid.
+- **Flexbox**: O uso de `flex-wrap` e `order` ajudou a criar layouts mais dinâmicos e adaptáveis, essencial para projetos modernos.
+- **Position Sticky**: A diferença entre `sticky` e `fixed` foi fundamental para aplicar a fixação de elementos de forma mais flexível, dependendo do comportamento do scroll.
+- **Efeito Parallax**: Dominei a técnica de parallax para criar fundos dinâmicos e interativos, melhorando a experiência visual do site.
+- **Imagens Responsivas**: O uso de `<picture>` e `srcset` garantiu que as imagens fossem carregadas de forma eficiente, otimizando o desempenho.
+- **Formulários Avançados**: A validação de inputs e a aplicação de diferentes tipos de campos melhoraram a experiência do usuário e a integridade dos dados.
+- **Combinators e Quebra de Texto**: Aprendi técnicas de CSS para melhorar a responsividade e garantir que o layout não quebre em diferentes dispositivos.
+
+## 💬 Projetos Práticos
+
+- **Modal**: Criação de um modal utilizando HTML e CSS. <br>
+[Fazendo um modal na prática](semana3/project-modal.html)
+- **Paginação**: Implementação de um sistema de paginação para navegação em listas grandes. <br>
+[Fazendo uma paginação na prática](semana3/project-pagination.html)
+- **Menu Dropdown**: Criação de um menu dropdown interativo. <br>
+[Fazendo um menu dropdown na prática](semana3/project-dropdown.html)
+- **Input Search Avançado**: Desenvolvimento de um campo de busca com funcionalidades avançadas. <br>
+[Fazendo um input search avançado na prática](semana3/project-input-search.html)
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="DESCRIÇÃO DO PROJETO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Input de busca</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        .area {
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-search {
+            margin-top: 20px;
+            width: 200px;
+            padding: 10px 10px 10px 40px;
+            background-image: url(searchicon.png);
+            background-repeat: no-repeat;
+            background-position-x: 5px;
+            background-position-y: 50%;
+            color: var(--dark-color);
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+            transition: all 0.4s ease;
+        }
+
+        .input-search:focus {
+            width: 400px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Input de busca avançado</h1>
+    <hr>
+    <div class="area">
+        <input class="input-search" type="search" name="search" id="search" placeholder="Pesquise aqui...">
+    </div>
+</body>
+
+</html>

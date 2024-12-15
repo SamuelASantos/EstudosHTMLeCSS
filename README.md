@@ -1,6 +1,14 @@
-# 📚 Resumo do Estudo: HTML e CSS [Mais tecnologias vão sendo adicionadas regularmente]
+# 📚 Resumo do Estudo: 
 
 Bem-vindo ao repositório onde compartilho meu aprendizado e projetos práticos sobre diversas tecnologias. Este repositório contém anotações e exemplos de código das semanas de estudo, com foco em estudo de programação.
+
+## 🧠 Tecnologias estudadas 
+
+- HTML
+- CSS
+- Lógica de programação
+- [Mais tecnologias vão sendo adicionadas regularmente]
+
 
 ## 🎯 Objetivo
 
@@ -80,16 +88,12 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - [**Cálculo de gorjeta**](portugol/Exercicio03-Calculo-de-gorjeta.por)
 - [**Cálculo de juros simples**](portugol/Exercicio04-Calculo-de-juros-simples.por)
 
-
-## 💡 Resumo dos Aprendizados
-
-- **Layouts Avançados**: Aprendi a usar `grid-template-areas` para criar layouts complexos e responsivos, facilitando a organização dos elementos em um grid.
-- **Flexbox**: O uso de `flex-wrap` e `order` ajudou a criar layouts mais dinâmicos e adaptáveis, essencial para projetos modernos.
-- **Position Sticky**: A diferença entre `sticky` e `fixed` foi fundamental para aplicar a fixação de elementos de forma mais flexível, dependendo do comportamento do scroll.
-- **Efeito Parallax**: Dominei a técnica de parallax para criar fundos dinâmicos e interativos, melhorando a experiência visual do site.
-- **Imagens Responsivas**: O uso de `<picture>` e `srcset` garantiu que as imagens fossem carregadas de forma eficiente, otimizando o desempenho.
-- **Formulários Avançados**: A validação de inputs e a aplicação de diferentes tipos de campos melhoraram a experiência do usuário e a integridade dos dados.
-- **Combinators e Quebra de Texto**: Aprendi técnicas de CSS para melhorar a responsividade e garantir que o layout não quebre em diferentes dispositivos.
+## 💡 **Resumo dos Aprendizados**  
+- **Semana 0**: Iniciei com orientações, ferramentas usadas nos estudos assim como organização de pastas e arquivos.  
+- **Semana 1**: Compreendi os fundamentos de HTML e CSS, aprendendo a estruturar e estilizar páginas web de forma simples e eficaz.  
+- **Semana 2**: Aprofundei meus conhecimentos em técnicas avançadas de CSS, como Flexbox e Grid, para criar layouts responsivos e dinâmicos.  
+- **Semana 3**: Aprendi a integrar multimídia com HTML5, usando as tags `<video>` e `<audio>`, além de aplicar efeitos interativos como o parallax.  
+- **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol.
 
 ## 📝 Contato
 

@@ -61,6 +61,26 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - [**Menu dropdown na prática**](semana3/project-dropdown.html)
 - [**Input search avançado na prática**](semana3/project-input-search.html)
 
+### [Semana 4: Lógica de Programação](semana4.md)
+- **Conceitos principais**: Introdução à lógica de programação, diferenças entre programa, software e algoritmo, tipos primitivos de dados, e operações aritméticas.
+- **Desafios**: Implementação de algoritmos básicos, cálculos matemáticos em Portugol, e criação de exercícios práticos.
+- **Aprendizados**:
+  - Como diferenciar programa, software e algoritmo.
+  - Como estruturar e implementar algoritmos simples.
+  - Como utilizar variáveis e tratar erros de tipo e sintaxe.
+  - Como aplicar operações aritméticas em programação.
+  - Introdução ao conceito de Input/Output (I/O) e interatividade com o usuário.
+
+## 🧩 Projetos Práticos
+- [**Hello, World! na prática**](portugol/ola-mundo.por)
+- [**I/O na prática**](portugol/I-O.por)
+- [**Operações aritméticas na prática**](portugol/operacoes-aritmeticas.por)
+- [**Cálculo de IMC**](portugol/Exercicio01-Calculadora-IMC.por)
+- [**Consumo de combustível**](portugol/Exercicio02-Consumo-de-combustivel.por)
+- [**Cálculo de gorjeta**](portugol/Exercicio03-Calculo-de-gorjeta.por)
+- [**Cálculo de juros simples**](portugol/Exercicio04-Calculo-de-juros-simples.por)
+
+
 ## 💡 Resumo dos Aprendizados
 
 - **Layouts Avançados**: Aprendi a usar `grid-template-areas` para criar layouts complexos e responsivos, facilitando a organização dos elementos em um grid.

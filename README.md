@@ -70,14 +70,19 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - [**Input search avançado na prática**](semana3/project-input-search.html)
 
 ### [Semana 4: Lógica de Programação](semana4.md)
-- **Conceitos principais**: Introdução à lógica de programação, diferenças entre programa, software e algoritmo, tipos primitivos de dados, e operações aritméticas.
-- **Desafios**: Implementação de algoritmos básicos, cálculos matemáticos em Portugol, e criação de exercícios práticos.
+- **Conceitos principais**: Introdução à lógica de programação, diferenças entre programa, software e algoritmo, tipos primitivos de dados, operações aritméticas, condicionais, laços de repetição, funções, operadores lógicos, vetores e estrutura de algoritmos.
+- **Desafios**: Implementação de algoritmos básicos, cálculos matemáticos em Portugol, e criação de exercícios práticos. Implementação de algoritmos práticos com condicionais, loops, funções parametrizadas e manipulação de vetores.
 - **Aprendizados**:
   - Como diferenciar programa, software e algoritmo.
   - Como estruturar e implementar algoritmos simples.
   - Como utilizar variáveis e tratar erros de tipo e sintaxe.
   - Como aplicar operações aritméticas em programação.
   - Introdução ao conceito de Input/Output (I/O) e interatividade com o usuário.
+  - Como utilizar condicionais (se e senao) e operadores lógicos para controle de fluxo.
+  - Como evitar loops infinitos e implementar laços de repetição como ENQUANTO e PARA.
+  - Como aplicar operadores de incremento, decremento e módulo em algoritmos.
+  - Como construir funções parametrizadas e organizar o código com escopo e retorno.
+  - Como manipular vetores para armazenar e acessar múltiplos valores.
 
 ## 🧩 Projetos Práticos
 - [**Hello, World! na prática**](portugol/ola-mundo.por)
@@ -87,13 +92,23 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - [**Consumo de combustível**](portugol/Exercicio02-Consumo-de-combustivel.por)
 - [**Cálculo de gorjeta**](portugol/Exercicio03-Calculo-de-gorjeta.por)
 - [**Cálculo de juros simples**](portugol/Exercicio04-Calculo-de-juros-simples.por)
+- [**Cálculo de IMC v2.0**](portugol/calculadora-imc-v2.por)
+- [**Autenticador de usuários**](portugol/autenticacao-de-usuarios.por)
+- [**Par ou ímpar?**](portugol/par-ou-impar.por)
+- [**Tabuada**](portugol/tabuada.por)
+- [**Tabuada v2.0**](portugol/tabuada-v2.por)
+- [**Pular linha automaticamente**](portugol/pular-linha.por)
+- [**Elevar ao quadrado**](portugol/expoente-2.por)
+- [**Média dos alunos**](portugol/media-aluno.por)
+- [**Média dos alunos v2.0**](portugol/media-alunos-v2.por)
+
 
 ## 💡 **Resumo dos Aprendizados**  
 - **Semana 0**: Iniciei com orientações, ferramentas usadas nos estudos assim como organização de pastas e arquivos.  
 - **Semana 1**: Compreendi os fundamentos de HTML e CSS, aprendendo a estruturar e estilizar páginas web de forma simples e eficaz.  
 - **Semana 2**: Aprofundei meus conhecimentos em técnicas avançadas de CSS, como Flexbox e Grid, para criar layouts responsivos e dinâmicos.  
 - **Semana 3**: Aprendi a integrar multimídia com HTML5, usando as tags `<video>` e `<audio>`, além de aplicar efeitos interativos como o parallax.  
-- **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol.
+- **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol. Compreendi lógica de programação com condicionais, loops, funções parametrizadas e manipulação de vetores
 
 ## 📝 Contato
 

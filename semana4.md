@@ -89,3 +89,102 @@
         - [PROJETO: Cálculo de gorjeta](portugol/Exercicio03-Calculo-de-gorjeta.por)
     3. **Juros simples**:
         - [PROJETO: Cálculo de juros simples](portugol/Exercicio04-Calculo-de-juros-simples.por)
+
+#### 📋 Condicionais e operadores Lógicos
+- Introdução às condicionais "se" e "senão" com operadores lógicos, variáveis e exemplos práticos
+  - Executa um bloco de códigos, senão, executa outro bloco de códigos
+    ``` 
+      se(){...}
+      senao {...}
+    ```
+    
+
+#### 🔄 Melhorando algoritmo com condicionais e refatorando
+- Refatoração de código para classificar IMC em categorias: Obesidade, sobrepeso, normal e baixo peso
+- 🧩 Projeto Prático
+    1. **IMC v2.0**:
+        - [PROJETO: IMC](portugol/calculadora-imc-v2.por)
+
+#### 🔁 Laços de repetição enquanto
+- Introdução a laços de repetição com variáveis lógica e condicionais em programação
+
+#### 🧩 Exercício: Autenticação de usuários
+- Criação de um sistema de autenticação com verificações de login, senha e permissões de usuário
+- 🧩 Projeto Prático
+    1. **Autenticador de Usuário**:
+        - [PROJETO: Autenticador de usuário](portugol/autenticacao-de-usuarios.por)
+
+#### 🔁 A importância de evitar loops infinitos
+- Loops infinitos, como identificá-los, evitá-los e importância de condição de parada
+- Todo loop precisa ter um circuit breaker (forma de parar)
+
+#### 📚 Operador de incremento e decremento
+- Operador de incremento ++
+- Operador de decremento --
+  - Exemplo de uso:
+    ```
+      inteiro numero = 0
+      numero++
+    ```
+
+#### 🔧 Operador módulo %
+- Introdução ao operador módulo: Conceito, exemplos e verificação de paridade e múltiplos
+  - Operador módulo %
+    - Resto de uma divisão
+- 🧩 Projeto Prático
+1. **Par ou ímpar**:
+    - [PROJETO: Par ou ímpar?](portugol/par-ou-impar.por)
+
+#### 🔁 Laço de repetição PARA
+- Construção e utilização do loop PARA comparado com o ENQUANTO
+  - Estrutura:
+    ```
+      para(CONTADOR; CONDIÇÃO; INCREMENTO){...}
+    ```
+
+#### 🔄 Exercício: Tabuada e laços aninhados
+- Algoritmo de repetição para imprimir tabuadas usando loops aninhados
+- 🧩 Projeto Prático
+    1. **Tabuada**:
+        - [PROJETO: Tabuada](portugol/tabuada.por)
+
+#### 📋 Conceito de função
+- Aprendizado sobre funções em programação, lógica de loops e organização de código
+  - Estrutura:
+    ```
+      funcao NOME_DA_FUNÇÃO (PARÂMETROS) {...}
+    ```
+- 🧩 Projeto Prático
+    1. **Tabuada v2.0**:
+        - [PROJETO: Tabuada 2.0](portugol/tabuada-v2.por)
+
+#### 📋 Funções, parâmetros e escopos
+- Parametrização e escopo de funções em programação
+
+#### 🔄 Exercício: Funções e retorno
+- Introdução a funções, criar funções para pular linha, elevar ao quadrado e calcular média dos alunos
+- 🧩 Projetos Práticos
+    1. **Pular linha**:
+        - [PROJETO: Pular linha](portugol/pular-linha.por)
+    2. **Elevar ao quadrado**
+        - [PROJETO: Elevar ao quadrado](portugol/expoente-2.por)
+    3. **Média dos alunos**
+        - [PROJETO: Média dos alunos](portugol/media-aluno.por)
+
+#### 📊 Introdução a vetores
+- Comparação com variáveis, exemplo prático em código e atribuição de tarefas
+  - Estrutura:
+    ```
+      cadeia nomes[3]
+      nomes[0] = "Samuel"
+      nomes[1] = "Ana"
+      nomes[2] = "João"
+    ```
+- 🧩 Projetos Práticos
+    1. **Média de notas v2.0**:
+        - [PROJETO: Média de notas 2.0](portugol/media-alunos-v2.por)
+
+#### Finalização de lógica
+- Encerramento do estudo de lógica de programação
+
+[Voltar](README.md)

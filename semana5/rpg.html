@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="DESCRIÇÃO DO PROJETO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>TÍTULO DO PROJETO</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprendendo JS</h1>
+    <hr>
+    <p>(Criando campeão do RPG) - Abra o console para ver os resultados</p>
+
+    <script type="text/javascript">
+        let nome = "Blackletter";
+        let classe = "guerreiro";
+        let nivel = 10;
+        let vida = 0;
+        let mana = 0;
+
+        switch (classe) {
+            case "guerreiro":
+            case "paladino":
+                vida = nivel * 100;
+                mana = nivel * 50;
+                break;
+            case "mago":
+            case "druida":
+                vida = nivel * 50;
+                mana = nivel * 100;
+                break;
+            default:
+                vida = nivel * 20;
+                mana = nivel * 20;
+                break;
+        }
+
+        console.log("Nome:", nome);
+        console.log("Classe:", classe);
+        console.log("Nível:", nivel);
+        console.log("Vida:", vida);
+        console.log("Mana:", mana);
+
+    </script>
+</body>
+
+</html>

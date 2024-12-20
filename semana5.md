@@ -114,7 +114,7 @@
                 break;
         }
         ```
-    - **Exemplo prático**: [Características de campeão - Jogo RPG](rpg.html).
+    - 🧩 **Exemplo prático**: [Características de campeão - Jogo RPG](semana5/rpg.html).
 
 ---
 

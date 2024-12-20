@@ -92,3 +92,179 @@
         }
         ```  
 
+#### 🚦 Estruturas condicionais - Parte 2
+- **Operador ternário e switch no JavaScript**, abordando condicionais e exemplos práticos:
+    - **Estrutura do operador ternário**:
+        ```javascript
+        variável = (CONDIÇÃO) ? CASO_VERDADEIRO : CASO_FALSO;
+        ```
+        - Nesse exemplo, o resultado do operador lógico será armazenado na variável.
+
+    - **Estrutura do switch**:
+        ```javascript
+        switch(VALOR_DA_VARIÁVEL) {
+            case "VALOR1":
+                BLOCO_DE_CÓDIGO;
+                break;
+            case "VALOR2":
+                BLOCO_DE_CÓDIGO;
+                break;
+            default:
+                BLOCO_DE_CÓDIGO;
+                break;
+        }
+        ```
+    - **Exemplo prático**: [Características de campeão - Jogo RPG](rpg.html).
+
+---
+
+#### 🔄 Laços de repetição - Parte 1
+- **Laço de repetição WHILE e prevenção de loops infinitos em programação**:
+    - **Estrutura WHILE**:
+        ```javascript
+        while (CONDIÇÃO_DE_PARADA) {
+            BLOCO_DE_CÓDIGOS;
+        }
+        ```
+        - Não se esqueça de incluir um contador ou outra forma de parar o loop.
+
+---
+
+#### 🔁 Laços de repetição - Parte 2
+- **Laço de repetição FOR em comparação com WHILE**:
+    - **Estrutura FOR**:
+        ```javascript
+        for (VARIÁVEL; CONDIÇÃO; INCREMENTO/DECREMENTO) {
+            BLOCO_DE_CÓDIGOS;
+        }
+        ```
+        - O `for` é mais seguro para loops com uma quantidade de iterações conhecida.
+
+---
+
+#### 🛠️ Funções - Parte 1
+- **Introdução a funções em JavaScript, incluindo criação, uso, parâmetros e retornos**:
+    - **Estrutura FUNCTION [criação]**:
+        ```javascript
+        function NOME_DA_FUNÇÃO(PARÂMETROS) {
+            BLOCO_DE_CÓDIGOS;
+            return RETORNO_ESPERADO;
+        }
+        ```
+    - **Estrutura FUNCTION [execução]**:
+        ```javascript
+        NOME_DA_FUNÇÃO(PARÂMETROS);
+        ```
+
+---
+
+#### 🏹 Funções - Parte 2
+- **Outras formas de criar funções em JavaScript**:
+    - **Função anônima**:
+        ```javascript
+        VARIÁVEL = function(PARÂMETROS) {
+            BLOCO_DE_CÓDIGOS;
+            return RETORNO_ESPERADO;
+        };
+        ```
+    - **Arrow function**:
+        ```javascript
+        VARIÁVEL = (PARÂMETROS) => {
+            BLOCO_DE_CÓDIGOS;
+            return RETORNO_ESPERADO;
+        };
+        ```
+
+---
+
+#### 🔍 Diferença entre let e var
+- **Diferenças entre let e var no JavaScript**:
+    - `var`: Declara variáveis limitadas ao escopo de função.
+    - `let`: Declara variáveis limitadas ao bloco onde são definidas, reduzindo o risco de erros.
+
+---
+
+#### 📚 Arrays - Parte 1
+- **Introdução ao conceito de arrays em programação**:
+    ```javascript
+    VARIÁVEL = [ELEMENTOS];
+    ```
+    - **Acesso aos elementos**:
+        ```javascript
+        NOME_DO_ARRAY[ÍNDICE];
+        ```
+
+---
+
+#### 🔧 Arrays - Parte 2
+- **Operações e manipulações básicas de arrays**:
+    - **Contagem de itens**:
+        ```javascript
+        ARRAY.length;
+        ```
+    - **Adicionar um item**:
+        ```javascript
+        ARRAY.push(ITEM);
+        ```
+    - **Remover itens**:
+        ```javascript
+        ARRAY.pop(); // Último item
+        ARRAY.shift(); // Primeiro item
+        ```
+
+---
+
+#### 🖼️ Manipulação do DOM - Parte 1
+- **Introdução prática à manipulação de DOM com JavaScript**:
+    - **Seleção de elementos**:
+        - Por ID:
+            ```javascript
+            document.getElementById("ID");
+            ```
+        - Como no CSS:
+            ```javascript
+            document.querySelector("SELETOR");
+            ```
+
+---
+
+#### 🎨 Manipulação do DOM - Parte 2
+- **Alterações de conteúdo**:
+    - **Leitura com `innerHTML`**:
+        ```javascript
+        ELEMENTO.innerHTML;
+        ```
+    - **Alteração com `innerHTML`**:
+        ```javascript
+        ELEMENTO.innerHTML = "Novo conteúdo";
+        ```
+
+---
+
+#### 🎭 Manipulação do DOM - Parte 3
+- **Manipulação de estilos via JavaScript**:
+    - Adicionar classe:
+        ```javascript
+        ELEMENTO.classList.add("CLASSE");
+        ```
+    - Alterar estilos diretamente:
+        ```javascript
+        ELEMENTO.style.color = "red";
+        ```
+
+---
+
+#### 🖱️ Eventos - Parte 1
+- **Eventos em programação focando em clique de botão**:
+    ```html
+    <button onClick="FUNÇÃO()">Clique aqui</button>
+    ```
+
+---
+
+#### 🔔 Eventos - Parte 2
+- **Atribuindo eventos a elementos HTML via JavaScript**:
+    ```javascript
+    ELEMENTO.addEventListener("TIPO_DO_EVENTO", FUNÇÃO);
+    ```
+    - OBS: Não use parênteses `()` ao passar a função, para evitar execução imediata.

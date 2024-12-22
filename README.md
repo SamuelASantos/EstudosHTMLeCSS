@@ -7,7 +7,7 @@ Bem-vindo ao repositório onde compartilho meu aprendizado e projetos práticos 
 - HTML
 - CSS
 - Lógica de programação
-- [Mais tecnologias vão sendo adicionadas regularmente]
+- JavaScript
 
 
 ## 🎯 Objetivo
@@ -102,6 +102,43 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - [**Média dos alunos**](portugol/media-aluno.por)
 - [**Média dos alunos v2.0**](portugol/media-alunos-v2.por)
 
+### **[Semana 5: JavaScript Inicial](semana5.md) 🚀✨**
+
+- **Conceitos principais**:
+  - **HTML**: Linguagem de marcação usada para estruturar páginas web. 🖋️
+  - **JavaScript**: Linguagem de programação usada para tornar as páginas web dinâmicas, com suporte a lógica, loops, variáveis, operadores e funções. 🖥️
+  - **Variáveis**: Declaração e uso de variáveis com `var`, `let` e `const`. 🔑
+  - **Tipos de Dados**: `number`, `string`, `boolean`. 🔢💬
+  - **Operadores de Comparação e Lógicos**: `>`, `<`, `==`, `===`, `&&`, `||`. ⚖️
+  - **Estruturas Condicionais**: `if`, `else`, `else if`, operador ternário e `switch`. 🔄
+  - **Laços de Repetição**: `while`, `for`. 🔁
+  - **Funções**: Criação e execução de funções, incluindo funções anônimas e arrow functions. 🛠️
+  - **Arrays**: Definição, acesso e manipulação de arrays com métodos como `push()`, `pop()`, `shift()`. 📦
+  - **Manipulação do DOM**: Seleção e modificação de elementos HTML via JavaScript. 🎨
+  - **Eventos**: Atribuição de eventos a elementos HTML, como o clique de um botão. 🖱️
+
+---
+
+- **Desafios**:
+  - **Entender a diferença entre `let` e `var`**: Saber quando usar cada um para evitar erros relacionados ao escopo. 🤔
+  - **Manipulação do DOM**: Selecionar e alterar elementos HTML usando JavaScript de forma eficiente. 🖼️
+  - **Trabalhar com arrays**: Criar, acessar e modificar arrays, além de aprender a usar métodos como `push()`, `pop()`, e `shift()`. 📚
+  - **Eventos em JavaScript**: Atribuir e gerenciar eventos como cliques e interações com o usuário. 🔔
+
+---
+
+- **Aprendizados**:
+  - **Uso de variáveis**: Aprendi a declarar variáveis corretamente, utilizando `let` e `const` para garantir um código mais seguro e eficiente. 🔑
+  - **Manipulação do DOM**: Compreendi como selecionar elementos HTML e modificar seu conteúdo ou estilo com JavaScript, utilizando `innerHTML` e `classList`. 🎨
+  - **Estruturas condicionais e laços de repetição**: Aprofundei meus conhecimentos em estruturas de controle, como `if`, `else`, `while` e `for`, para criar lógica de fluxo eficiente. 🔄
+  - **Eventos**: Aprendi a atribuir eventos a elementos HTML e gerenciar interações do usuário com o código JavaScript. 🖱️
+
+---
+
+## 🧩 Projeto Prático
+- **[Calculadora](https://github.com/SamuelASantos/calculadora)**
+
+
 
 ## 💡 **Resumo dos Aprendizados**  
 - **Semana 0**: Iniciei com orientações, ferramentas usadas nos estudos assim como organização de pastas e arquivos.  
@@ -109,6 +146,7 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - **Semana 2**: Aprofundei meus conhecimentos em técnicas avançadas de CSS, como Flexbox e Grid, para criar layouts responsivos e dinâmicos.  
 - **Semana 3**: Aprendi a integrar multimídia com HTML5, usando as tags `<video>` e `<audio>`, além de aplicar efeitos interativos como o parallax.  
 - **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol. Compreendi lógica de programação com condicionais, loops, funções parametrizadas e manipulação de vetores
+- **Semana 5**: Aprendi os conceitos iniciais de JavaScript, como variáveis, tipos de dados, operadores, estruturas condicionais e laços de repetição. Aprofundei meus conhecimentos em manipulação de DOM e eventos, além de trabalhar com funções e arrays para criar interatividade nas páginas web.
 
 ## 📝 Contato
 

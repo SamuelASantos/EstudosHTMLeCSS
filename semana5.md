@@ -268,3 +268,9 @@
     ELEMENTO.addEventListener("TIPO_DO_EVENTO", FUNÇÃO);
     ```
     - OBS: Não use parênteses `()` ao passar a função, para evitar execução imediata.
+
+
+## 💬 Projeto Prático: semana 5
+[Calculadora](https://github.com/SamuelASantos/calculadora)
+
+[Voltar](README.md)

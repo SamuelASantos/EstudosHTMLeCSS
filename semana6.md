@@ -116,4 +116,60 @@
     ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"].filter(nome => nome.split(' ').length > 2);
     ```
     - Resultado: `["Maria de Fátima"]`
-```
+
+
+### Métodos de arrays - slice ✂️
+- **Conceito - `slice`**:  
+  O método `slice` retorna uma cópia superficial de uma parte do array, sem modificar o original. É útil para criar subarrays com base em índices específicos.
+
+  - **Exemplo prático**:  
+    - **Lista inicial**: `["Samuel Santos", "João Moraes", "Ana Lúcia", "Maria de Fátima"]`
+    - **Objetivo**: Cortar apenas os 2 primeiros nomes.  
+    - **Código**:  
+      ```javascript
+      let nomes = ["Samuel Santos", "João Moraes", "Ana Lúcia", "Maria de Fátima"];
+      let newList = nomes.slice(0, 2);
+      console.log(newList); // Resultado: ["Samuel Santos", "João Moraes"]
+      ```
+    - **Resultado esperado**: `["Samuel Santos", "João Moraes"]`
+  
+   **Dicas importantes**:
+  - Use `slice` para criar subarrays sem modificar o original.
+  - Sempre teste o comportamento desses métodos no console para entender como afetam os arrays.
+
+  #### 🛠️ Usando o DevTools  
+  - Experimente os métodos `slice` no console do navegador para observar seus efeitos:  
+  - **Teste de `slice`**:  
+    ```javascript
+    ["A", "B", "C", "D"].slice(1, 3); // Resultado: ["B", "C"]
+    ```
+
+### Métodos de arrays - splice ✂️
+- **Conceito - `splice`**:  
+  O método `splice` altera o conteúdo de um array, removendo ou substituindo elementos diretamente. Ele pode também retornar os elementos removidos.
+
+  - **Exemplo prático**:  
+    - **Lista inicial**: `[1, 2, 3, 4, 5]`
+    - **Objetivo**: Cortar 2 itens a partir do índice 2.  
+    - **Código**:  
+      ```javascript
+      let numeros = [1, 2, 3, 4, 5];
+      let newList = numeros.splice(2, 2);
+      console.log(newList); // Resultado: [3, 4]
+      console.log(numeros); // Lista original alterada: [1, 2, 5]
+      ```
+    - **Resultado esperado**:  
+      - **Lista nova**: `[3, 4]`
+      - **Lista original**: `[1, 2, 5]`
+
+- **Dicas importantes**:
+  - Use `splice` para manipular diretamente o array original, seja removendo ou substituindo elementos.
+  - Sempre teste o comportamento desses métodos no console para entender como afetam os arrays.
+
+#### 🛠️ Usando o DevTools  
+- Experimente os métodos `splice` no console do navegador para observar seus efeitos:  
+  - **Teste de `splice`**:  
+    ```javascript
+    let arr = ["X", "Y", "Z"];
+    arr.splice(1, 1); // Remove "Y", arr se torna ["X", "Z"]
+    ```

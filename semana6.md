@@ -83,3 +83,37 @@
     ```javascript
     [1, 2, 3].map(num => {return num * 2}); // Resultado: [2, 4, 6]
     ```
+
+
+### Métodos de arrays - filter 🔍
+- **Conceito**:  
+  O método `filter` cria um novo array contendo apenas os elementos que atendem a uma condição especificada em uma função de callback. Ele é ideal para filtrar dados de forma eficiente.
+
+- **Exemplo de uso prático**:
+  1. **Filtrando nomes com mais de dois termos**:  
+     - **Lista inicial**: `["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"]`
+     - **Resultado esperado**: `["Maria de Fátima"]`  
+     - **Código**:  
+       ```javascript
+       let nomes = ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"];
+       let nomesFiltrados = nomes.filter(item => {
+           let nome = item.split(' ');
+           return nome.length > 2;
+       });
+       console.log(nomesFiltrados); // Resultado: ["Maria de Fátima"]
+       ```
+
+- **Dicas importantes**:
+  - Use o `filter` para criar subgrupos de dados com base em critérios específicos.
+  - Combine o `filter` com outros métodos, como `map`, para transformações adicionais após a filtragem.
+
+#### 🛠️ Usando o DevTools  
+- Teste o método `filter` diretamente no console do navegador:
+  - Execute o exemplo acima e veja como os nomes são filtrados.
+  - Experimente diferentes condições para entender o comportamento do método.
+  - **Exemplo de comando no console**:  
+    ```javascript
+    ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"].filter(nome => nome.split(' ').length > 2);
+    ```
+    - Resultado: `["Maria de Fátima"]`
+```

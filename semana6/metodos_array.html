@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Aprendizado de JS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>JavaScript - Métodos de Array</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        p {
+            margin: 10px 20px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        hr {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript - Métodos de Array</h1>
+    <hr>
+    <h2>forEach</h2>
+    <h3>Manipulando números</h3>
+    <p>Lista - [1, 2, 3, 4, 5]</p>
+    <p>Multiplicando os itens da lista de números por 2</p>
+    <p id="lista-numeros"></p>
+    <h3>Manipulando nomes</h3>
+    <p>Lista - ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"]</p>
+    <p>Selecionando somente o primeiro nome da lista de nomes</p>
+    <p id="lista-nomes"></p>
+    <hr>
+    <h2>map</h2>
+    <p>Lista - [1, 2, 3, 4, 5]</p>
+    <p>Multiplicando os itens da lista de números por 2 com map</p>
+    <p id="lista-numeros-map"></p>
+    <h3>Manipulando nomes</h3>
+    <p>Lista - ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"]</p>
+    <p>Selecionando somente o primeiro nome da lista de nomes com map</p>
+    <p id="lista-nomes-map"></p>
+    <hr>
+    <h2>filter</h2>
+    <p>Lista de nomes - ["Samuel Santos", "João Moraes", "Ana Lúcia", "Maria de Fátima"]</p>
+    <p>Filtrando somente os nomes que tem 3 nomes</p>
+    <p id="lista-nomes-filter"></p>
+    <hr>
+    <h2>slice</h2>
+    <p>Lista de nomes - ["Samuel Santos", "João Moraes", "Ana Lúcia", "Maria de Fátima"]</p>
+    <p>Cortando apenas os 2 primeiros nomes</p>
+    <p id="lista-nomes-slice"></p>
+    <hr>
+    <h2>splice</h2>
+    <p>Lista de números - [1, 2, 3, 4, 5]</p>
+    <p>Cortando os 2 itens a partir do index 2</p>
+    <p>Lista Original - [1, 2, 5]</p>
+    <p>Lista Nova:</p>
+    <p id="lista-numeros-splice"></p>
+
+    <script>
+        function view_p(list, id) {
+            let p = document.querySelector(id);
+            p.innerHTML = "RESULTADO: " + list;
+        }
+
+
+        function creatorArrays(metodo, lista, tipo) {
+            let lista_auxiliar = [];
+            switch (metodo) {
+                case 'forEach':
+                    if (tipo === "double") {
+                        lista.forEach(item => {
+                            lista_auxiliar.push(item * 2);
+                        })
+                    } else if (tipo === "firstName") {
+                        lista.forEach(item => {
+                            let nome = item.split(" ");
+                            lista_auxiliar.push(nome[0]);
+                        })
+                    }
+                    break;
+
+                case 'map':
+                    if (tipo === "double") {
+                        lista_auxiliar = lista.map((item) => {
+                            return item * 2
+                        });
+                    } else if (tipo === "firstName") {
+                        lista_auxiliar = lista.map(item => {
+                            let nome = item.split(" ");
+                            return nome[0];
+                        })
+                    }
+                    break;
+
+                case 'filter':
+                    if (tipo === "tresNomes") {
+                        lista_auxiliar = lista.filter(item => {
+                            let nome = item.split(' ');
+                            return nome.length > 2;
+                        });
+                    }
+                    break;
+
+                default:
+                    console.log("Método de array desconhecido")
+                    break;
+            }
+            return lista_auxiliar;
+        }
+
+        let numeros = [1, 2, 3, 4, 5];
+        let lista_dois_numeros = [1, 2, 3, 4, 5];
+        let nomes = ["Samuel Santos", "João Morais", "Ana Lúcia", "Maria de Fátima"]
+        let newList = [];
+
+        newList = creatorArrays("forEach", numeros, "double");
+        view_p(newList, "#lista-numeros");
+
+        newList = creatorArrays("forEach", nomes, "firstName");
+        view_p(newList, "#lista-nomes");
+
+        newList = creatorArrays("map", numeros, "double");
+        view_p(newList, "#lista-numeros-map");
+
+        newList = creatorArrays("map", nomes, "firstName");
+        view_p(newList, "#lista-nomes-map");
+
+        newList = creatorArrays("filter", nomes, "tresNomes");
+        view_p(newList, "#lista-nomes-filter");
+
+        newList = nomes.slice(0, 2);
+        view_p(newList, "#lista-nomes-slice");
+
+        newList = lista_dois_numeros.splice(2, 2);
+        view_p(newList, "#lista-numeros-splice");
+
+    </script>
+</body>
+
+</html>

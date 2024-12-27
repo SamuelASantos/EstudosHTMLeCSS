@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo avançado de dom">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>DOM avançado</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --secondary-color: #254e70;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        h2,
+        h3,
+        p {
+            margin: 20px;
+        }
+
+        .area {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        button {
+            margin: 30px auto;
+            padding: 15px;
+            border-radius: 8px;
+            color: var(--light-color);
+            background-color: var(--primary-color);
+            border: none;
+            cursor: pointer;
+            transition: all .2s ease;
+            width: 400px;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM avançado</h1>
+    <hr>
+    <h2>Manipulação de DOM</h2>
+    <p>É importante criar os elementos manualmente por JavaScript porque se apenas modificarmos o elemento, todo o
+        elemento será renderizado fazendo com que perca processamento</p>
+    <p>Para garanti que a página não seja re-renderizada completamente ao adicionar um novo elemento ao DOM, usamos o
+        createElement para criar um novo elemento e o appendChild para adicioná-lo</p>
+    <h3>Criação de elementos</h3>
+    <p>Estrutura para criação de um elemento: document.createElement(ELEMENTO)</p>
+    <p>Ao criar um novo elemento no JS usando document.createElement o método retornará um objeto Element que representa
+        o novo elemento criado</p>
+    <h3>Inserção de elementos via JS</h3>
+    <p>A forma mais eficiente de adicionar um novo elemento a uma div sem re-renderizar todo o seu conteúdo é por usar o
+        createElement para criar o elemento manualmente e appendChild para inseri-lo na div</p>
+    <p>Estrutura para inserção de um elemento: LOCAL.appendChild(ELEMENTO_CRIADO)</p>
+    <div class="area">
+        <p>Área para exemplo prático:</p>
+        <button onclick="criarP()">Criar um novo parágrafo</button>
+        <hr>
+    </div>
+
+    <script>
+        function criarP() {
+            let area = document.querySelector(".area");
+
+            let p = document.createElement('p');
+            p.innerHTML = "Parágrafo criado com sucesso!"
+
+            area.appendChild(p);
+        }
+    </script>
+</body>
+
+</html>

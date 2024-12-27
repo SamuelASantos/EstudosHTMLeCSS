@@ -173,6 +173,7 @@
     let arr = ["X", "Y", "Z"];
     arr.splice(1, 1); // Remove "Y", arr se torna ["X", "Z"]
     ```
+[Métodos Array na prática](semana6/metodos_array.html)
 
 ### Introdução a objetos em JavaScript 🛠️
 - **Conceito**:  
@@ -204,6 +205,9 @@
    pessoa.email = "samuel@example.com";
    console.log(pessoa.email); // Resultado: "samuel@example.com"
    ```
+
+[Objetos na prática](semana6/objetos.html)
+
 
 ### Diferenças entre `const` e `let` 📜
 - **`const`**:  
@@ -251,4 +255,5 @@
     let obj = { a: 1, b: 2 };
     for (const key in obj) console.log(key); // Resultado: "a", "b"
     ```
-```
+
+[DOM avançado na prática](semana6/dom_avancado.html)

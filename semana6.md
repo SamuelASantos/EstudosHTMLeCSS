@@ -173,3 +173,82 @@
     let arr = ["X", "Y", "Z"];
     arr.splice(1, 1); // Remove "Y", arr se torna ["X", "Z"]
     ```
+
+### Introdução a objetos em JavaScript 🛠️
+- **Conceito**:  
+  Objetos são coleções de propriedades, onde cada propriedade é composta por uma chave e um valor. Eles são amplamente utilizados para representar entidades no JavaScript.
+
+- **Criação de objetos**:  
+  Um objeto pode ser criado diretamente utilizando a notação de chaves `{}`:  
+  ```javascript
+  let pessoa = {
+      nome: "Samuel",
+      sobrenome: "Santos",
+      empresa: "SamSantos",
+      idade: 99,
+      cpf: 98765432182
+  };
+  console.log(pessoa.nome); // Resultado: "Samuel"
+  ```
+
+### Modificando objetos 🔧
+1. **Alterar propriedade**:  
+   Modifique uma propriedade existente atribuindo um novo valor diretamente:  
+   ```javascript
+   pessoa.idade = 100;
+   console.log(pessoa.idade); // Resultado: 100
+   ```
+2. **Adicionar propriedade**:  
+   Adicione uma nova propriedade ao objeto utilizando a notação de ponto:  
+   ```javascript
+   pessoa.email = "samuel@example.com";
+   console.log(pessoa.email); // Resultado: "samuel@example.com"
+   ```
+
+### Diferenças entre `const` e `let` 📜
+- **`const`**:  
+  Objetos declarados com `const` não podem ser reatribuídos, mas suas propriedades internas podem ser alteradas.  
+  ```javascript
+  const obj = { chave: "valor" };
+  obj.chave = "novo valor"; // Permitido
+  obj = {}; // Erro: não é possível reatribuir
+  ```
+- **`let`**:  
+  Permite reatribuição do objeto e alteração de suas propriedades.
+
+### Iteração em Arrays e Objetos 🔄
+1. **Iterando com `for in`**:  
+   Use para acessar as propriedades enumeráveis de um objeto ou os índices de um array.  
+   ```javascript
+   let lista = [
+       { name: "Samuel", age: 99 },
+       { name: "João", age: 20 },
+       { name: "Ana", age: 37 }
+   ];
+   for (const i in lista) {
+       console.log(lista[i].name); // Resultado: "Samuel", "João", "Ana"
+   }
+   ```
+2. **Iterando com `for of`**:  
+   Use para iterar diretamente sobre os valores dos itens de um array.  
+   ```javascript
+   for (const i of lista) {
+       console.log(i.age); // Resultado: 99, 20, 37
+   }
+   ```
+
+- **Dicas importantes**:
+  - Prefira `for in` para propriedades de objetos.
+  - Use `for of` para iterar sobre valores de arrays, garantindo simplicidade e legibilidade.
+
+#### 🛠️ Usando o DevTools  
+- Teste a manipulação de objetos e iterações no console do navegador:
+  - Crie objetos e arrays diretamente no console.
+  - Experimente modificar propriedades e adicionar novas.
+  - Execute os loops para verificar como cada um funciona.
+  - **Exemplo de comando no console**:  
+    ```javascript
+    let obj = { a: 1, b: 2 };
+    for (const key in obj) console.log(key); // Resultado: "a", "b"
+    ```
+```

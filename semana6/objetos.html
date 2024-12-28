@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo de objetos em Javascript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Javascript - Objetos</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        p,
+        h2,
+        h3 {
+            margin: 20px;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript - Objetos</h1>
+    <hr>
+    <h2>Introdução a objetos</h2>
+    <h3>Criando objetos</h3>
+    <hr>
+    <h2>Modificando objetos</h2>
+    <h3>Alterar propriedade</h3>
+    <p>Podemos modificar uma propriedade existente de um objeto por atribuir um novo valor diretamente à propriedade do
+        objeto</p>
+    <p>Para fazermos uma alteração na propriedade de um objeto podemos usar a seguinte estrutura: objeto['propriedade']
+        = valor;</p>
+    <h3>Adicionando propriedade</h3>
+    <p>Para adicionar uma nova propriedade a um objeto devo usar a estrutura objeto.propriedade = valor;</p>
+    <h3>Diferenças entre 'const' e 'let'</h3>
+    <p>Se tentarmos substituir um objeto criado com const por outro valor um erro é lançado porque a constante não pode
+        ser redeclarada</p>
+    <p>É recomendado usar 'const' ao criar um objeto em JS porque isso garante que a referência ao objeto não pode ser
+        reatribuída</p>
+    <p>Embora o objeto não poder mudar de estrutura quando usamos o 'const', ainda assim as propriedades internas de um
+        objeto podem ser alteradas mesmo que ele seja declarado usando o 'const'</p>
+    <hr>
+    <h2>Iteração em Arrays e Objetos</h2>
+    <p>Podemos criar arrays de objetos definindo objetos diretamente dentro de um array, separando por vírgulas</p>
+    <h3>Uso do for in</h3>
+    <p>Usamos quando queremos iterar sobre propriedades enumeráveis de um objeto ou índices de um array</p>
+    <h3>Uso do for of</h3>
+    <p>Usamos quando queremos iterar diretamente sobre os valores dos itens no array</p>
+
+
+    <script>
+        let pessoa = {
+            nome: "Samuel",
+            sobrenome: "Santos",
+            empresa: "SamSantos",
+            idade: 99,
+            cpf: 98765432182
+        }
+
+        console.log(pessoa.nome)
+
+        let lista = [
+            { name: 'Samuel', age: 99 },
+            { name: 'João', age: 20 },
+            { name: 'Ana', age: 37 }
+        ]
+
+        for (const i in lista) {
+            console.log(lista[i].name);
+        }
+
+        for (const i of lista) {
+            console.log(i.age);
+        }
+    </script>
+</body>
+
+</html>

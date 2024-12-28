@@ -251,4 +251,85 @@
     let obj = { a: 1, b: 2 };
     for (const key in obj) console.log(key); // Resultado: "a", "b"
     ```
-```
+
+### Manipulação de DOM Avançado 🖼️
+- **Conceito**:  
+  A manipulação avançada do DOM (Document Object Model) permite criar, modificar e remover elementos diretamente no navegador, otimizando o desempenho ao evitar re-renderizações completas da página.
+
+#### Criação e Inserção de Elementos 📄
+- **Criação de elementos**:  
+  Use o método `document.createElement(ELEMENTO)` para criar novos elementos de forma manual.  
+  - **Exemplo**:  
+    ```javascript
+    let p = document.createElement('p'); 
+    p.innerHTML = "Parágrafo criado com sucesso!";
+    ```
+- **Inserção de elementos**:  
+  Adicione o elemento criado a uma área específica do DOM com o método `appendChild`.  
+  - **Exemplo**:  
+    ```javascript
+    let area = document.querySelector(".area");
+    area.appendChild(p);
+    ```
+
+#### Atributos e Propriedades de Elementos 🛠️
+- **Adição de atributos**:  
+  Use `ELEMENTO.setAttribute('atributo', 'valor')` para adicionar atributos personalizados.  
+  - **Exemplo**:  
+    ```javascript
+    p.setAttribute('id', 'novo-paragrafo');
+    ```
+- **Adição de classes**:  
+  Adicione uma nova classe com `ELEMENTO.classList.add('classe')`.  
+  - **Exemplo**:  
+    ```javascript
+    p.classList.add('classe-exemplo');
+    ```
+- **Estilo inline**:  
+  Modifique estilos diretamente com `ELEMENTO.style.propriedade`.  
+  - **Exemplo**:  
+    ```javascript
+    p.style.color = 'blue';
+    ```
+- **Diferença entre `innerHTML` e `innerText`**:  
+  - `innerHTML`: Retorna o conteúdo com formatação HTML.  
+  - `innerText`: Retorna apenas o texto.
+
+#### Eventos Avançados: Teclado e Mouse ⌨️🐭
+1. **Eventos de teclado**:  
+   - Use `onkeyup` ou `onkeydown` para capturar eventos de teclado.  
+   - Propriedades úteis:  
+     - `event.key`: Retorna o valor digitado.  
+     - `event.code`: Retorna o código físico da tecla pressionada.  
+   - **Exemplo**:  
+     ```javascript
+     function clicou(e) {
+         let clique = document.querySelector('#evento-key');
+         clique.innerText = e.key;
+         console.log(e.key); // Exibe o valor da tecla pressionada
+     }
+     ```
+2. **Eventos de mouse**:  
+   - Utilize manipuladores como `onclick`, `onmouseover` e `onmouseout` para interagir com o mouse.  
+   - **Exemplo prático**: Criar um parágrafo ao clicar em um botão.  
+     ```javascript
+     function criarP() {
+         let area = document.querySelector(".area");
+         let p = document.createElement('p');
+         p.innerHTML = "Parágrafo criado com sucesso!";
+         area.appendChild(p);
+     }
+     ```
+
+#### 🛠️ Usando o DevTools  
+- Inspecione os elementos criados e manipulados diretamente no navegador:  
+  - Use o console para criar e inserir elementos em tempo real.  
+  - Teste eventos de teclado e mouse observando os logs no console.  
+  - **Exemplo no console**:  
+    ```javascript
+    let div = document.querySelector('.area');
+    let p = document.createElement('p');
+    p.innerText = "Texto gerado no DevTools!";
+    div.appendChild(p);
+    ```
+- 🧩 **Exemplos práticos**: [DOM avançado](semana6/dom_avancado.html).

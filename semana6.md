@@ -333,3 +333,62 @@
     div.appendChild(p);
     ```
 - 🧩 **Exemplos práticos**: [DOM avançado](semana6/dom_avancado.html).
+
+### Eventos de Mouse 🖱️
+- **Conceito**:  
+  Eventos de mouse permitem interações dinâmicas e responsivas em elementos HTML, tornando páginas mais interativas e intuitivas.
+
+- **Tipos de eventos**:
+  - **`mousedown`**: Disparado ao pressionar o botão do mouse sobre um elemento.  
+  - **`mouseup`**: Disparado ao soltar o botão do mouse.  
+  - **`mouseenter`**: Ocorre quando o ponteiro do mouse entra na área de um elemento.  
+  - **`mouseleave`**: Ocorre quando o ponteiro do mouse sai da área de um elemento.  
+  - **`mousemove`**: Disparado enquanto o mouse é movido sobre um elemento.  
+  - **`contextmenu`**: Disparado ao clicar com o botão direito do mouse.  
+
+- **Importante**:  
+  Ao receber um evento como parâmetro, você pode alterar seu comportamento padrão utilizando o método `preventDefault`.  
+  - **Exemplo**:  
+    ```javascript
+    element.addEventListener('contextmenu', event => {
+        event.preventDefault(); // Impede a exibição do menu de contexto padrão
+        console.log("Menu de contexto desativado.");
+    });
+    ```
+
+#### Exemplo de uso prático 🎯
+1. **Implementando eventos de mouse**:
+   - **HTML**:  
+     ```html
+     <div id="box" style="width: 200px; height: 200px; background-color: lightblue;">
+       Passe o mouse aqui
+     </div>
+     ```
+   - **JavaScript**:  
+     ```javascript
+     let box = document.getElementById("box");
+
+     box.addEventListener("mousedown", () => console.log("Mouse pressionado"));
+     box.addEventListener("mouseup", () => console.log("Mouse solto"));
+     box.addEventListener("mouseenter", () => console.log("Mouse entrou na área"));
+     box.addEventListener("mouseleave", () => console.log("Mouse saiu da área"));
+     box.addEventListener("mousemove", () => console.log("Mouse movendo"));
+     box.addEventListener("contextmenu", event => {
+         event.preventDefault();
+         console.log("Menu de contexto desativado");
+     });
+     ```
+
+2. **Comportamento esperado**:
+   - Ao pressionar ou soltar o botão do mouse, mensagens serão exibidas no console.
+   - Movimentos do mouse sobre o elemento serão registrados.
+   - O menu de contexto será desativado ao clicar com o botão direito no elemento.
+
+#### 🛠️ Usando o DevTools  
+- Teste eventos de mouse diretamente no navegador:
+  - Inspecione o elemento e observe os logs no console ao interagir com ele.
+  - Experimente o uso de `preventDefault` para alterar comportamentos padrão.
+  - **Exemplo de teste no console**:  
+    ```javascript
+    document.body.addEventListener("mousemove", () => console.log("Mouse em movimento!"));
+    ```

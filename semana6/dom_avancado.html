@@ -47,7 +47,9 @@
 
         h2,
         h3,
-        p {
+        p,
+        input,
+        label {
             margin: 20px;
         }
 
@@ -97,15 +99,57 @@
         <button onclick="criarP()">Criar um novo parágrafo</button>
         <hr>
     </div>
+    <h2>Atributos e propriedades dos elementos</h2>
+    <hr>
+    <p>Estrutura para adicionar um atributo específico em um elemento HTML: ELEMENTO.setAttribute('atributo', 'valor')
+    </p>
+    <p>Método para adicionar uma nova classe a um elemento HTML: ELEMENTO.classList.add('NOVA-CLASSE')</p>
+    <p>Estrutura para modificar o estilo inline de um elemento HTML: ELEMENTO.style.fontSize = '20px'</p>
+    <p>Para remover um atributo de um elemento HTML usando JS: ELEMENTO.removeAttribute('ATRIBUTO')</p>
+    <p>A diferença entre innerHTML e innerText é que o innerHTML retorna o texto com formatação HTML enquanto o
+        innerText retorna apena o texto</p>
+    <p>Para obter o valor de um atributo de um elemento HTML usamos a estrutura: ELEMENTO.getAttribute('ATRIBUTO')</p>
+    <h2>Eventos avançados: Eventos de teclado</h2>
+    <hr>
+    <h3>Eventos de teclado (key up/down) e identificação de teclas</h3>
+    <p>Ao adicionar um event listener diretamente no HTML poderemos obter detalhes sobre o evento mas é necessário
+        adicionar o atributo 'event' no manipulador de eventos</p>
+    <label for="texto">Revelando a tecla clicada:</label>
+    <input type="text" onkeyup="clicou(event)" placeholder="Digite aqui">
+    <p id="evento-key">...</p>
+    <p>A propriedade event.code retorna o código físico da tecla pressionada quando um tecla é pressionada</p>
+    <p>A principal diferença entre as propriedades event.code e event.key em eventos de teclado é que event.key retorna
+        o valor digitado e o event.code retorna o código físico da tecla pressionada</p>
+    <p>Ao adicionar um event listener diretamente no HTML obteremos detalhes do evento por adicionar o atributo 'event'
+        no manipulador de eventos</p>
+    <p>O 'onKeyDown' é mais útil que o 'onKeyUp' quando fazemos ações que devem ocorrer continuamente enquanto a tecla é
+        mantida pressionada, como mover um objeto na tela</p>
+    <h2>Evento avançados: Eventos de mouse</h2>
+    <p>mousedown - Evento de clique de mouse quando segura o botão</p>
+    <p>mouseup - Evento de clique de mouse quando solta o botão</p>
+    <p>mouseenter - Evento para quando o ponteiro do mouse entrar na área do elemento</p>
+    <p>mouseleave - Evento para quando o ponteiro do mouse sair da área do elemento</p>
+    <p>mousemove - Evento de mouse que é disparado ao mover o mouse</p>
+    <p>Os eventos de mouse podem ser colocados em qualquer elemento html</p>
+    <p>contextmenu - Evento de clique com o botão direito do mouse</p>
+    <p>Ao receber um evento como parametro da função, podemos alterar o comportamento padrão com o 'preventDefault'</p>
+    <p>Exemplo de uso:</p>
+    <p>event.preventDefault();</p>
 
     <script>
         function criarP() {
             let area = document.querySelector(".area");
 
             let p = document.createElement('p');
-            p.innerHTML = "Parágrafo criado com sucesso!"
+            p.innerHTML = "Parágrafo criado com sucesso!";
 
             area.appendChild(p);
+        }
+
+        function clicou(e) {
+            let clique = document.querySelector('#evento-key');
+            clique.innerText = e.key;
+            console.log(e.key);
         }
     </script>
 </body>

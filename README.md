@@ -137,8 +137,37 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 
 ## 🧩 Projeto Prático
 - **[Calculadora](https://github.com/SamuelASantos/calculadora)**
+  
+---
 
+### **[Semana 6: JavaScript Intermediário](semana6.md) 🚀✨**
 
+- **Conceitos principais**:
+  - **Manipulação Avançada do DOM**: Adição e remoção dinâmica de elementos HTML. 🎨
+  - **Eventos**: Gerenciamento de eventos de mouse (hover, click, etc.) e teclado (keydown, keyup). 🖱️⌨️
+  - **Iteração Avançada com Arrays**: Métodos como `map()`, `filter()`, `slice()` e `splice()`. 📊
+
+---
+
+- **Desafios**:
+  - **Eventos de Mouse e Teclado**: Implementar funcionalidades que dependem de interações do usuário, como cliques de teclado ou animações ao passar o mouse. 🖱️⌨️
+  - **Manipulação Avançada do DOM**: Criar e remover elementos dinamicamente para criar interfaces dinâmicas. 🎭
+  - **Iteração com Arrays**: Resolver problemas usando métodos como `map()`, `filter()`, `splice()` e `slice()`. 📈
+
+---
+
+- **Aprendizados**:
+  - **Eventos de Mouse e Teclado**: Entendi como capturar e gerenciar eventos, criando interações mais dinâmicas e responsivas. 🖱️⌨️
+  - **Manipulação de Objetos e Arrays**: Explorei métodos avançados para transformar e acessar dados de forma mais eficiente. 🛠️📊
+  - **DOM Dinâmico**: Consegui adicionar e remover elementos HTML dinamicamente, aprimorando a interatividade das páginas. 🎨
+
+---
+
+## 🧩 Projeto Prático
+- **[Lista To-Do](EM BREVE)**
+  - Criação de uma lista de tarefas em JavaScript, manipulando arrays e DOM.
+
+---
 
 ## 💡 **Resumo dos Aprendizados**  
 - **Semana 0**: Iniciei com orientações, ferramentas usadas nos estudos assim como organização de pastas e arquivos.  
@@ -147,6 +176,7 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - **Semana 3**: Aprendi a integrar multimídia com HTML5, usando as tags `<video>` e `<audio>`, além de aplicar efeitos interativos como o parallax.  
 - **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol. Compreendi lógica de programação com condicionais, loops, funções parametrizadas e manipulação de vetores
 - **Semana 5**: Aprendi os conceitos iniciais de JavaScript, como variáveis, tipos de dados, operadores, estruturas condicionais e laços de repetição. Aprofundei meus conhecimentos em manipulação de DOM e eventos, além de trabalhar com funções e arrays para criar interatividade nas páginas web.
+- **Semana 6**: Explorei conceitos intermediários de JavaScript, como métodos de arrays, incluindo forEach, para manipular dados de forma eficiente. Aprendi também sobre eventos de mouse, utilizando interações como mousedown, mouseup, mouseenter, mouseleave, mousemove e contextmenu, além de aplicar o método preventDefault para personalizar comportamentos padrão.Também aprendi eventos de teclado como onkeydown e onkeyup
 
 ## 📝 Contato
 

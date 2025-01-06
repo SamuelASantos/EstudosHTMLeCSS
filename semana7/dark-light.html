@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Projeto de theme dark/light mode">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Dark/Light mode</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        .area {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .area button {
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .area button:hover {
+            background-color: #cf4816;
+        }
+
+        .dark {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+
+        .light {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dark/Light mode</h1>
+    <hr>
+    <div class="area">
+        <button onclick="dark('dark')">Dark mode</button>
+        <button onclick="light('light')">Light mode</button>
+    </div>
+
+    <script>
+        function dark(theme) {
+            localStorage.setItem('theme', 'dark');
+            loadTheme()
+        }
+
+        function light(theme) {
+            localStorage.setItem('theme', 'light');
+            loadTheme();
+        }
+
+        function loadTheme() {
+            let theme = localStorage.getItem('theme');
+            let body = document.querySelector('body');
+
+            switch (theme) {
+                case 'light':
+                    body.classList.remove('dark');
+                    body.classList.add('light');
+                    break;
+
+                case 'dark':
+                    body.classList.remove('light');
+                    body.classList.add('dark');
+                    break;
+            }
+        }
+
+        loadTheme();
+    </script>
+</body>
+
+</html>

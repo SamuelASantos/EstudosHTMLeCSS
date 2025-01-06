@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo sobre localStorage">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>localStorage</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        .area {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .area button {
+            padding: 10px;
+            width: 100px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            cursor: pointer;
+        }
+
+        .area button:hover {
+            background-color: #d64510;
+        }
+
+        h2 {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>localStorage</h1>
+    <hr>
+
+    <div class="area">
+        <button onclick="readName()">Ler</button>
+        <button onclick="saveName()">Salvar</button>
+        <button onclick="clearName()">Apagar</button>
+    </div>
+    <h2></h2>
+
+    <script>
+        let h2 = document.querySelector('h2');
+
+        function readName() {
+            if (localStorage.getItem('name') === null) {
+                h2.innerHTML = 'Não tem nenhum nome salvo';
+            } else {
+                let name = localStorage.getItem('name');
+                h2.innerHTML = name;
+            }
+        }
+
+        function saveName() {
+            h2.innerHTML = 'Nome Samuel salvo no local storage';
+            localStorage.setItem('name', 'Samuel');
+        }
+
+        function clearName() {
+            localStorage.clear();
+            h2.innerHTML = 'Local storage limpo';
+
+        }
+    </script>
+</body>
+
+</html>

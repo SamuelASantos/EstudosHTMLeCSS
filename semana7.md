@@ -79,3 +79,57 @@
 - 🧩 **Exemplo prático**: [Fetch na prática](semana7/fetch.html)
 
 ---
+
+#### **📦 Manipulação de Respostas JSON**
+- Dinamicamente exibir listas de usuários em HTML a partir de requisições GET.
+- **🧩 Exemplo prático:** [Requisição de nome e cidade de uma API na prática](semana7/async-await.html)
+
+---
+
+#### **⏳ Promises e Async/Await**
+- **Promises:** Estrutura que permite trabalhar com operações assíncronas.
+  - Método `.then`: Processa o retorno de uma promise.
+  - A função `fetch` sempre retorna uma promise.
+- **Async/Await:** Abordagem mais legível para funções assíncronas.
+  - **Estrutura básica:**
+    ```javascript
+    const myFunction = async () => {
+      const data = await fetch(URL);
+    };
+    ```
+  - **Diferença:**
+    - `then`: Pode causar **aninhamento excessivo**.
+    - `async/await`: Torna o código mais **estruturado e legível**.
+- **🧩 Exemplo prático:** [Async/Await na prática](semana7/async-await.html)
+
+---
+
+#### **⚠️ Tratamento de Erros**
+- **Estratégias de tratamento:**
+  - **Promises:** Uso de `.catch` para capturar erros.
+    ```javascript
+    fetch(URL)
+      .then(res => res.json())
+      .catch(error => console.error(error));
+    ```
+  - **Async/Await:** Blocos `try/catch` para controle de erros.
+    ```javascript
+    const fetchData = async () => {
+      try {
+        const response = await fetch(URL);
+        const data = await response.json();
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    ```
+- **Função do `.catch`:** Capturar erros durante a execução da promise.
+
+---
+
+### **💡 Aprendizados**
+1. **Manipulação de JSON:** Integração de dados em HTML dinamicamente.
+2. **Async/Await vs. Then:** Entendimento das vantagens de código mais legível com async/await.
+3. **Tratamento de erros:** Uso de `.catch` e `try/catch` para maior controle e segurança em operações assíncronas.
+
+---

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo de Async/Await">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Estudo de Async/Await</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 0 20px;
+        }
+
+        .area {
+            display: flex;
+            margin: auto;
+            max-width: 1200px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 10px;
+            margin: 30px auto;
+            width: 200px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border-radius: 8px;
+            border: none;
+        }
+
+        ul1,
+        ul2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 20px;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Estudo de Async/Await</h1>
+    <hr>
+    <div class="area">
+        <button onclick="loadUsers()">Visualizar usuários [.then]</button>
+        <ul class="ul1"></ul>
+
+        <button onclick="loadUsers2()">Visualizar usuários [async/await]</button>
+        <ul class="ul2"></ul>
+    </div>
+
+    <script>
+        function loadUsers() {
+            console.log('Início do código')
+            let capUl = document.querySelector('.ul1');
+
+            capUl.innerHTML = '';
+
+            let url = 'https://jsonplaceholder.typicode.com/users';
+            fetch(url)
+
+                .then(res => res.json())
+                .then(json => {
+                    console.log('Código dentro do fetch (meio do código)')
+                    for (const i in json) {
+                        let elemLi = document.createElement('li');
+                        elemLi.innerHTML = 'Nome: ' + json[i].name + ' - Cidade: ' + json[i].address.city;
+                        capUl.appendChild(elemLi);
+                    }
+                })
+            console.log('Fim do código')
+        }
+
+        const loadUsers2 = async () => {
+            console.log('Início do código')
+
+            let capUl = document.querySelector('.ul2');
+
+            const url = 'https://jsonplaceholder.typicode.com/users';
+            const res = await fetch(url);
+            console.log('Meio do código com async/await')
+
+            const json = await res.json();
+
+            for (const i in json) {
+                let elemLi = document.createElement('li');
+                elemLi.innerHTML = 'Nome: ' + json[i].name + ' - Cidade: ' + json[i].address.city;
+                capUl.appendChild(elemLi);
+            }
+            console.log('Fim do código')
+
+        }
+    </script>
+</body>
+
+</html>

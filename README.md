@@ -169,6 +169,39 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 
 ---
 
+### **[Semana 7: JavaScript Avançado e DOM Dinâmico](semana7.md) 🚀✨**
+
+- **Conceitos principais**:
+  - **Objetos em JavaScript**: Criação e manipulação de objetos, uso de propriedades e métodos. 🧱
+  - **JSON (JavaScript Object Notation)**: Estrutura de dados leve para troca de informações entre cliente e servidor. 📜
+  - **Manipulação Avançada do DOM**: Criação dinâmica de elementos HTML, remoção e atualização de conteúdo. 🎨
+  - **Eventos Avançados**: Delegação de eventos, prevenção de comportamento padrão e propagação de eventos. 🔔
+  - **Promises e Async/Await**: Controle de operações assíncronas, uso de `then`, `catch` e `finally`. ⏳
+  - **APIs Fetch**: Consumo de APIs RESTful com o método `fetch` para requisições HTTP. 🌐
+  - **Manipulação de Estilos via JavaScript**: Alteração de classes, estilos inline e animações dinâmicas. 🎭
+
+---
+
+- **Desafios**:
+  - **Trabalhar com objetos e JSON**: Criar e manipular objetos complexos e converter dados entre objetos e JSON. 🔄
+  - **Criação dinâmica de elementos**: Usar JavaScript para adicionar, remover e modificar elementos diretamente no DOM. 🛠️
+  - **Controle de eventos avançados**: Implementar delegação e gerenciar propagação de eventos em elementos HTML. 🔗
+  - **Requisições HTTP com Fetch**: Realizar chamadas a APIs externas, manipular respostas e tratar erros. 🌐
+  - **Promises e Async/Await**: Entender como lidar com fluxos assíncronos e evitar callbacks aninhados. ⏱️
+
+---
+
+- **Aprendizados**:
+  - **Manipulação de objetos e JSON**: Entendi como criar objetos complexos, acessar propriedades e converter entre JSON e objetos JavaScript. 🧩
+  - **DOM Dinâmico**: Aprendi a criar e manipular elementos HTML de forma dinâmica, possibilitando interfaces mais interativas. 🎨
+  - **Eventos Avançados**: Aprofundei conhecimentos em delegação de eventos e prevenção de comportamentos indesejados. 🖱️
+  - **Fetch e Async/Await**: Compreendi como realizar requisições HTTP, manipular dados retornados e tratar erros de forma eficiente. 🌐
+
+---
+
+## 🧩 Projeto Prático da semana 7
+- **[Blog com Likes](https://github.com/SamuelASantos/blog-com-likes)**
+
 ## 💡 **Resumo dos Aprendizados**  
 - **Semana 0**: Iniciei com orientações, ferramentas usadas nos estudos assim como organização de pastas e arquivos.  
 - **Semana 1**: Compreendi os fundamentos de HTML e CSS, aprendendo a estruturar e estilizar páginas web de forma simples e eficaz.  
@@ -177,6 +210,7 @@ O objetivo deste repositório é registrar o progresso do meu aprendizado, compa
 - **Semana 4**: Entendi os conceitos de lógica de programação, como algoritmos, tipos de dados e operações aritméticas, além de praticar com exercícios de programação em Portugol. Compreendi lógica de programação com condicionais, loops, funções parametrizadas e manipulação de vetores
 - **Semana 5**: Aprendi os conceitos iniciais de JavaScript, como variáveis, tipos de dados, operadores, estruturas condicionais e laços de repetição. Aprofundei meus conhecimentos em manipulação de DOM e eventos, além de trabalhar com funções e arrays para criar interatividade nas páginas web.
 - **Semana 6**: Explorei conceitos intermediários de JavaScript, como métodos de arrays, incluindo forEach, para manipular dados de forma eficiente. Aprendi também sobre eventos de mouse, utilizando interações como mousedown, mouseup, mouseenter, mouseleave, mousemove e contextmenu, além de aplicar o método preventDefault para personalizar comportamentos padrão.Também aprendi eventos de teclado como onkeydown e onkeyup
+- **Semana 7**: Aprofundei meus conhecimentos em JavaScript avançado, incluindo manipulação dinâmica do DOM, criação e manipulação de objetos e JSON, controle de eventos avançados, e consumo de APIs RESTful com Fetch e Async/Await.
 
 ## 📝 Contato
 

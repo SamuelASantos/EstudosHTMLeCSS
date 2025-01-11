@@ -230,3 +230,8 @@
    - Implementação de um sistema de alternância de temas com Local Storage, garantindo experiência do usuário aprimorada.
 
 ---
+
+## 💬 Projeto Prático: semana 7
+[Blog com Likes](https://github.com/SamuelASantos/blog-com-likes)
+
+[Voltar](README.md)

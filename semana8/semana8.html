@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo de Javascript - Data e Internacionalização">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Estudo de Javascript</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data e Internacionalização</h1>
+    <hr>
+    <h2>Métodos de Data e Hora</h2>
+    <p class="p1"></p>
+    <p class="p2"></p>
+    <hr>
+
+    <script>
+        const time = new Date();
+        let year = time.getFullYear();
+        let month = time.getMonth();
+        let day = time.getDate();
+        let weekDay = time.getDay();
+
+        switch (weekDay) {
+            case 0:
+                weekDay = 'Domingo';
+                break;
+            case 1:
+                weekDay = 'Segunda-feira';
+                break;
+            case 2:
+                weekDay = 'Terça-feira';
+                break;
+            case 3:
+                weekDay = 'Quarta-feira';
+                break;
+            case 4:
+                weekDay = 'Quinta-feira';
+                break;
+            case 5:
+                weekDay = 'Sexta-feira';
+                break;
+            case 6:
+                weekDay = 'Sábado';
+                break;
+
+            default:
+                alert('Erro no dia da semana')
+                break;
+        }
+
+        switch (month) {
+            case 0:
+                month = 'janeiro';
+                break;
+            case 1:
+                month = 'fevereiro';
+                break;
+            case 2:
+                month = 'março';
+                break;
+            case 3:
+                month = 'abril';
+                break;
+            case 4:
+                month = 'maio';
+                break;
+            case 5:
+                month = 'junho';
+                break;
+            case 6:
+                month = 'julho';
+                break;
+            case 7:
+                month = 'agosto';
+                break;
+            case 8:
+                month = 'setembro';
+                break;
+            case 9:
+                month = 'outubro';
+                break;
+            case 10:
+                month = 'novembro';
+                break;
+            case 11:
+                month = 'dezembro';
+                break;
+
+            default:
+                alert('Erro no dia da semana')
+                break;
+        }
+
+        let hours = time.getHours();
+        let minutes = time.getMinutes();
+        let seconds = time.getSeconds();
+        let mili = time.getMilliseconds();
+
+        console.log('Ano: ' + year);
+        console.log('Mês: ' + month);
+        console.log('Dia: ' + day);
+        console.log('Dia da semana: ' + weekDay);
+
+        console.log('Hora: ' + hours);
+        console.log('Minuto: ' + minutes);
+        console.log('Segundo: ' + seconds);
+        console.log('Milisegundo: ' + mili);
+
+        let p1 = document.querySelector('.p1');
+        p1.innerHTML = weekDay + ', ' + day + ' de ' + month + ' de ' + year;
+
+        let p2 = document.querySelector('.p2');
+        p2.innerHTML = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds) + ':' + mili;
+    </script>
+</body>
+
+</html>

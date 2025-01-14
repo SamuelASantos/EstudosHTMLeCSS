@@ -50,3 +50,45 @@ Abaixo estão os métodos mais utilizados para manipulação de datas e horas em
 - 🧩 **Exemplos práticos**: 
    - [Métodos de Data e Hora na prática](semana8/semana8.html).
 ---
+
+### Modificando Data e Hora
+
+🕒 **Manipulação de Datas e Horas em JavaScript**
+
+- **Definição de Data Manual**  
+  Utilize o construtor `Date` no formato:  
+  ```javascript
+  new Date();
+  ```
+
+- **Incremento de Dias**  
+  Para adicionar 7 dias à data atual:  
+  ```javascript
+  date.setDate(date.getDate() + 7);
+  ```
+
+- **Obtenção e Modificação de Valores**  
+  - Para obter o dia atual:  
+    ```javascript
+    date.getDate();
+    ```
+  - Para modificar o ano:  
+    ```javascript
+    date.setFullYear(ANO);
+    ```
+
+- **Definição de Datas Específicas**  
+  Estrutura do construtor `Date`:  
+  ```javascript
+  new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds);
+  ```
+
+---
+
+### 📘 Aprendizados
+
+- Entendimento da estrutura e uso do construtor `Date` para definir datas específicas.
+- Aplicação prática de métodos como `.setDate()` e `.setFullYear()` para manipular datas dinamicamente.
+- Uso eficiente de métodos para incrementar dias e modificar componentes específicos da data.
+
+---

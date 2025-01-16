@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Manipulação de números em Javascript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Manipulação de números em Javascript</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        span {
+            color: var(--primary-color);
+        }
+
+        .area {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manipulação de números em Javascript</h1>
+    <hr>
+    <h2>Formatando moedas</h2>
+    <div class="area">
+        <p>Valor original: <span>1234,56</span></p>
+    </div>
+    <hr>
+
+    <script>
+
+        function format(uf, code) {
+            let area = document.querySelector('.area');
+            let p = document.createElement('p');
+
+            let valor_formatted = new Intl.NumberFormat(uf, {
+                style: 'currency',
+                currency: code,
+                currencyDisplay: "narrowSymbol"
+            }).format(1234, 56);
+
+            p.classList.add('moeda-' + uf);
+            p.innerHTML = valor_formatted;
+
+            area.appendChild(p);
+        }
+
+        format('pt-BR', 'BRL');
+        format('en-US', 'USD');
+        format('ja-JP', 'JPY');
+    </script>
+</body>
+
+</html>

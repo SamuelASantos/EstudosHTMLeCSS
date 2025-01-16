@@ -132,4 +132,35 @@ Abaixo estão os métodos mais utilizados para manipulação de datas e horas em
 - Configuração de timezones específicos, como `America/Recife`, para precisão em horários locais.
 - Compreensão das diferenças entre formatos `short` e `long` para exibição de timezones.
 
+- 🧩 **Exemplos práticos**: [Datas e Horas na prática](semana8/data-e-horas.html).
+---
+
+### 📝 Formatando Moedas
+
+#### 📌 Principais Conceitos
+- **Intl.NumberFormat**: API do JavaScript utilizada para formatar números com base na localidade e opções especificadas.
+  - **Parâmetro 'style'**: Deve ser configurado como `'currency'` para formatar números como moeda.
+  - **Propriedade 'currency'**: Define a moeda a ser utilizada, como `'BRL'` (Real brasileiro) ou `'USD'` (Dólar americano).
+  - **Propriedade 'currencyDisplay'**: Configura como a moeda será exibida:
+    - `'symbol'`: Exibe o símbolo da moeda (ex.: R$).
+    - `'code'`: Exibe o código da moeda (ex.: BRL).
+    - `'name'`: Exibe o nome completo da moeda (ex.: Real brasileiro).
+
+#### 💻 Exemplo de Uso
+```javascript
+new Intl.NumberFormat('pt-BR', { 
+    style: 'currency', 
+    currency: 'BRL', 
+    currencyDisplay: 'code' 
+}).format(1234.56);
+// Resultado: 'BRL 1.234,56'
+```
+
+#### 📚 Aprendizados
+- Aprendi a formatar números como moeda utilizando a API **Intl.NumberFormat**.
+- Descobri como personalizar a exibição de moedas com as propriedades `style`, `currency` e `currencyDisplay`.
+- Apliquei o conceito de localidade (`'pt-BR'`) para atender diferentes padrões regionais de formatação.
+
+
+- 🧩 **Exemplos práticos**: [Intl na prática](semana8/moedas.html).
 ---

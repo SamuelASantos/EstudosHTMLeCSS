@@ -48,6 +48,15 @@
         p {
             margin-top: 20px;
         }
+
+        button {
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -59,6 +68,15 @@
     <p class="p2"></p>
     <hr>
     <h2>Modificando Data e Hora</h2>
+    <hr>
+    <h2>Entendendo o toLocaleString</h2>
+    <p class="date"></p>
+    <button onclick="viewDate()">Clique para visualizar informações de data e hora</button>
+    <hr>
+    <h2>Fuso Horário e Manipulação de Timezone</h2>
+    <p class="time-zone"></p>
+    <button onclick="viewTimeZone()">Clique para visualizar informações de TimeZone</button>
+    <hr>
 
     <script>
         const time = new Date();
@@ -158,6 +176,20 @@
 
         let p2 = document.querySelector('.p2');
         p2.innerHTML = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds) + ':' + mili;
+
+        function viewDate() {
+            const date = new Date();
+            let p_date = document.querySelector('.date');
+            p_date.innerHTML = date.toLocaleString();
+        }
+
+        function viewTimeZone() {
+            const date = new Date();
+            let p_time_zone = document.querySelector('.time-zone');
+            p_time_zone.innerHTML = date.toLocaleString('pt-BR', {
+                timeZoneName: "long"
+            });
+        }
     </script>
 </body>
 

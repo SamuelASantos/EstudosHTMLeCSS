@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo sobre diferença entre datas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Diferença entre Datas</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        .area {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        input {
+            max-width: 100px;
+            margin: auto;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background-color: var(--light-color);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 8px;
+            width: 150px;
+            padding: 10px;
+            margin: auto;
+            color: var(--light-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diferença entre Datas</h1>
+    <hr>
+    <div class="area">
+        <label for="date1">Primeira data</label>
+        <input type="date" name="date1" id="date1" required>
+        <label for="date2">Segunda data</label>
+        <input type="date" name="date2" id="date2" required>
+        <button onclick="calculate()">Calcular diferença</button>
+        <p>Histórico:</p>
+    </div>
+    <script>
+        function calculate() {
+            let p = document.createElement('p');
+            let area = document.querySelector('.area');
+            let input1 = document.querySelector('#date1').value;
+            let input2 = document.querySelector('#date2').value;
+
+            if (input1 && input2) {
+                input1 = input1.split('-');
+                input2 = input2.split('-');
+
+                let date1 = new Date(input1[0], input1[1], input1[2]);
+                let date2 = new Date(input2[0], input2[1], input2[2]);
+                let dayMs = date2.getTime() - date1.getTime();
+                let days = 1000 * 60 * 60 * 24;
+                let diffDay = Math.floor(dayMs / days);
+
+                let formatted = new Intl.NumberFormat('pt-BR', {
+                    style: "unit",
+                    unit: "day",
+                    unitDisplay: "long"
+                }).format(diffDay);
+
+                p.innerHTML = formatted;
+                area.appendChild(p);
+            } else {
+                alert('Informe as 2 datas');
+            }
+
+        }
+    </script>
+</body>
+
+</html>

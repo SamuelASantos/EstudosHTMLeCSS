@@ -206,7 +206,7 @@ new Intl.NumberFormat('pt-BR', {
       const rtf = new Intl.RelativeTimeFormat('pt-BR', { style: 'long' });
       console.log(rtf.format(-1, 'day')); // "há 1 dia"
       ```
-      
+
 🔗 **Referências úteis**  
 - [Explorar API Intl](https://www.intl-explorer.com/)  
 
@@ -215,4 +215,31 @@ new Intl.NumberFormat('pt-BR', {
 - Aplicação prática de valores negativos para eventos passados.
 
 - 🧩 **Exemplos práticos**: [Intl datas relativas na prática](semana8/data-relativa.html)
+---
+
+Aqui está o resumo estruturado em Markdown com base no conteúdo fornecido: 
+
+---
+
+## 🕒 Diferença entre Datas
+
+### 📌 Conceitos Principais
+- **Cálculo da diferença entre datas**:
+  - A diferença entre datas é calculada em **milissegundos** e pode ser convertida para unidades maiores, como dias, horas ou minutos.
+- **Uso de `getTime`**:
+  - O método `getTime` retorna o número de milissegundos desde **1º de janeiro de 1970** para uma instância de `Date` no JavaScript.
+  - Milissegundos são utilizados por serem mais precisos do que unidades maiores.
+- **Valor zero em `getTime`**:
+  - O valor **zero** corresponde exatamente à data de **1º de janeiro de 1970**.
+- **Arredondamento com `Math.floor`**:
+  - O método `Math.floor` é usado para arredondar para baixo o resultado de uma divisão.
+
+---
+
+### ✨ Aprendizados
+- **Precisão nos cálculos de tempo**: Utilizar milissegundos permite cálculos mais exatos em comparação com segundos ou minutos.
+- **Uso eficiente de métodos JavaScript**: Aplicação prática de métodos como `getTime` e `Math.floor` para manipulação de datas e arredondamento.
+
+- 🧩 **Exemplos práticos**: [Diferença entre datas na prática](semana8/diferenca-datas.html).
+
 ---

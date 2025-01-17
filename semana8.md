@@ -162,5 +162,30 @@ new Intl.NumberFormat('pt-BR', {
 - Apliquei o conceito de localidade (`'pt-BR'`) para atender diferentes padrões regionais de formatação.
 
 
-- 🧩 **Exemplos práticos**: [Intl na prática](semana8/moedas.html).
+- 🧩 **Exemplos práticos**: [Intl moedas](semana8/moedas.html).
+---
+
+### Formatação de Números
+
+📌 **Tópicos Principais**  
+- **Formatação de números com unidades de medida**  
+  - Uso da API `Intl` no JavaScript para formatar números com unidades específicas.  
+  - Valores para a propriedade `unitDisplay`:  
+    - `long`: Exibe a unidade em texto completo.  
+    - `short`: Exibe a unidade em forma abreviada.  
+    - `narrow`: Exibe a unidade no formato mais compacto possível.  
+  - A propriedade `unitDisplay` controla o estilo de exibição da unidade, permitindo personalizar a apresentação dos dados.  
+
+🔗 **Referências úteis**  
+- [Explorar API Intl](https://www.intl-explorer.com/)  
+
+---
+
+### Aprendizados  
+✅ **Novas Habilidades Adquiridas**  
+- Entendimento sobre os diferentes estilos de exibição (`long`, `short`, `narrow`) ao formatar números com unidades de medida.  
+- Aplicação prática da API `Intl` no JavaScript para personalizar a apresentação de dados numéricos.  
+
+- 🧩 **Exemplos práticos**: [Intl números](semana8/numeros.html).
+
 ---

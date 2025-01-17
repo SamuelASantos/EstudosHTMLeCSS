@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo de API Intl com números">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Intl - Números</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        .area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Intl - Números</h1>
+    <hr>
+    <h2>Formatando números</h2>
+    <div class="area">
+        <p>Valor padrão: 123</p>
+    </div>
+    <hr>
+    <script>
+        function formatNumber(unit) {
+            let area = document.querySelector('.area');
+            let p = document.createElement('p');
+            let num = 123;
+
+            p.innerHTML = new Intl.NumberFormat('pt-BR', {
+                style: "unit",
+                unit: unit,
+                unitDisplay: "narrow"
+            }).format(123);
+
+            area.appendChild(p);
+        }
+
+        formatNumber("liter");
+        formatNumber('kilometer-per-hour');
+        formatNumber('degree');
+        formatNumber('hour');
+        formatNumber('year');
+    </script>
+</body>
+
+</html>

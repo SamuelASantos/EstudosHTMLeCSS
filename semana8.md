@@ -189,3 +189,30 @@ new Intl.NumberFormat('pt-BR', {
 - 🧩 **Exemplos práticos**: [Intl números](semana8/numeros.html).
 
 ---
+
+### Criando Datas Relativas 🕒
+
+#### 📌 **Tópicos Abordados**
+- **Formatação de Datas e Tempos Relativos**
+  - Uso do `Intl.RelativeTimeFormat` para manipulação de datas relativas.
+  - Diferenças entre os estilos:
+    - **`long`**: Texto detalhado (ex.: "há 1 dia").
+    - **`short`**: Texto reduzido (ex.: "1 dia atrás").
+    - **`narrow`**: Texto ainda mais abreviado (ex.: "1d").
+  - Configuração de eventos passados:
+    - Para indicar um evento ocorrido no passado, utilize valores negativos no método `format`.
+    - **Exemplo**:
+      ```javascript
+      const rtf = new Intl.RelativeTimeFormat('pt-BR', { style: 'long' });
+      console.log(rtf.format(-1, 'day')); // "há 1 dia"
+      ```
+      
+🔗 **Referências úteis**  
+- [Explorar API Intl](https://www.intl-explorer.com/)  
+
+#### ✨ **Aprendizados**
+- Entendimento detalhado sobre como usar `Intl.RelativeTimeFormat` para criar datas relativas com diferentes estilos.
+- Aplicação prática de valores negativos para eventos passados.
+
+- 🧩 **Exemplos práticos**: [Intl datas relativas na prática](semana8/data-relativa.html)
+---

@@ -1,0 +1,109 @@
+!
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Samuel Santos">
+    <meta name="Description" content="Estudo de formatação de datas relativas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Datas Relativas</title>
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #d25b2e;
+            --light-color: #f0f0f0;
+            --dark-color: #1c1e24;
+            /* Fonts */
+            --font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.8rem;
+            font-family: var(--font-family);
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        .area-total {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Datas Relativas</h1>
+    <hr>
+    <div class="area-total">
+        <h2>Dias - numeric: always</h2>
+        <div class="area"></div>
+        <h2>Dias - numeric: auto</h2>
+        <div class="area_2"></div>
+    </div>
+    <script>
+        function createDateShort(num, type) {
+            let area = document.querySelector('.area');
+            let element_p = document.createElement('p');
+            element_p.innerHTML = new Intl.RelativeTimeFormat('pt-BR').format(num, type);
+            area.appendChild(element_p);
+        }
+
+        function createDateLong(num, type) {
+            let area_2 = document.querySelector('.area_2');
+            let element_p = document.createElement('p');
+            element_p.innerHTML = new Intl.RelativeTimeFormat('pt-BR', {
+                numeric: "auto"
+            }).format(num, type);
+            area_2.appendChild(element_p);
+        }
+
+        createDateShort(-30, 'day');
+        createDateShort(-1, 'day');
+        createDateShort(0, 'day');
+        createDateShort(1, 'day');
+        createDateShort(30, 'day');
+
+        createDateLong(-30, 'day');
+        createDateLong(-3, 'day');
+        createDateLong(-2, 'day');
+        createDateLong(-1, 'day');
+        createDateLong(0, 'day');
+        createDateLong(1, 'day');
+        createDateLong(2, 'day');
+        createDateLong(3, 'day');
+        createDateLong(30, 'day');
+    </script>
+</body>
+
+</html>
